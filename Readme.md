@@ -1,7 +1,7 @@
 # Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Serega Grischenkov](https://up.htmlacademy.ru/adaptive/19/user/1157011).
-* Наставник: `Неизвестно`.
+* Наставник: `Алексей Ментер Зольников`.
 
 ---
 
