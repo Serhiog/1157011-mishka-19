@@ -1,46 +1,57 @@
 <!DOCTYPE html>
 <html lang="ru">
-
 <head>
-  <meta charset="utf-8">
+  <meta charset="utf-8"/>
   <title>HTML Academy: Мишка</title>
+  <link rel="stylesheet" href="css/style.css"/>
 </head>
 
 <body>
-  <header class="page-header">
+<header class="page-header">
+  <div class="container">
     <div class="page-header__wrapper">
       <div class="page-header__logo site-logo">
         <a class="site-logo__link" href="index.html">
-          <img class="site-logo__image" src="https://via.placeholder.com/86x35" alt="Логотип сайта" width="86" height="35">
+          <img class="site-logo__image" src="https://via.placeholder.com/86x35" alt="Логотип сайта" width="86"
+               height="35">
         </a>
       </div>
-      <nav class="menu-header menu">
+      <nav class="page-header__menu menu">
         <ul class="menu__list">
-          <li class="menu__item"><a class="menu__item-link" href="catalog.html">Каталог товаров</a></li>
-          <li class="menu__item"><a class="menu__item-link" href="#">Вязание на заказ</a></li>
-          <li class="menu__item search">Поиск по сайту</li>
-          <li class="menu__item court">Корзина: пока пуста</li>
+          <li class="menu__item">
+            <a class="menu__item-link" href="catalog.html">Каталог товаров</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__item-link" href="#">Вязание на заказ</a>
+          </li>
+          <li class="menu__item menu__item--search">Поиск по сайту</li>
+          <li class="menu__item menu__item--cart">Корзина: пока пуста</li>
         </ul>
       </nav>
     </div>
-  </header>
-  <main>
-    <section class="main-categories">
-      <h1 class="main-categories__title">Милые штуки ручной
-        работы для дома</h1>
+  </div>
+</header>
+<main>
+  <section class="main-categories">
+    <div class="container">
+      <h1 class="main-categories__title">
+        Милые штуки ручной работы для дома
+      </h1>
       <div class="main-categories__wrapper">
         <ul class="main-categories__list">
-          <li class="main-categories__item interior">Предметы
-            интерьера</li>
-          <li class="main-categories__item toys">Детские
-            игрушки</li>
+          <li class="main-categories__item interior">Предметы интерьера</li>
+          <li class="main-categories__item toys">Детские игрушки</li>
         </ul>
       </div>
-    </section>
-    <section class="week-item">
-      <div class="week-item__wrapper">
-        <h2 class="week-item__title best-item">Вязаные корзинки</h2>
-        <p class="week-item__about">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках и трех размерах.</p>
+    </div>
+  </section>
+  <section class="week-item">
+    <div class="container">
+      <div class="week-item__wrapper"><h2 class="week-item__title best-item">Вязаные корзинки</h2>
+        <p class="week-item__about">
+          Экологически чистая пряжа, ручная работа. Доступны в шести
+          расцветках и трех размерах.
+        </p>
         <table class="week-item__list">
           <tr class="week-item__properties">
             <th class="week-item__property">Цвет:</th>
@@ -55,59 +66,87 @@
             <td class="week-item__value">15 см</td>
           </tr>
         </table>
+
         <div class="week-item__picture">
-          <img class="week-item__image" src=" https://via.placeholder.com/260x315" alt="Вязаные корзинки" width="260" height="315">
+          <img
+            class="week-item__image"
+            src=" https://via.placeholder.com/260x315"
+            alt="Вязаные корзинки"
+            width="260"
+            height="315"
+          />
         </div>
         <div class="week-item__price">
           <p class="week-item__amount">Цена: 990 руб.</p>
         </div>
         <div class="week-item__add">
-          <button class="week-item__button button" type="button">Заказать</button>
+          <button class="button default-button" type="button">
+            Заказать
+          </button>
         </div>
       </div>
-    </section>
-    <section class="about-us">
+    </div>
+  </section>
+  <section class="about-us">
+    <div class="container">
       <div class="about-us__wrapper">
         <div class="about-us__header">
           <h2 class="about-us__title">Коротко о нас:</h2>
         </div>
         <div class="about-us__advantages">
           <ul class="about-us__list">
-            <li class="about-us__item eco">Экологически
-              чистые материалы</li>
-            <li class="about-us__item rate">Скандинавский стиль
-              по российской цене</li>
-            <li class="about-us__item likes">Увеличивает лайки
-              на фотографиях</li>
-            <li class="about-us__item handle">Связано вручную с
-              любовью и умилением</li>
-            <li class="about-us__item domestic">Поддержка отечественного производителя</li>
-            <li class="about-us__item package">Поставляется в
-              подарочной упаковке</li>
+            <li class="about-us__item eco">Экологически чистые материалы</li>
+            <li class="about-us__item rate">
+              Скандинавский стиль по российской цене
+            </li>
+            <li class="about-us__item likes">
+              Увеличивает лайки на фотографиях
+            </li>
+            <li class="about-us__item handle">
+              Связано вручную с любовью и умилением
+            </li>
+            <li class="about-us__item domestic">
+              Поддержка отечественного производителя
+            </li>
+            <li class="about-us__item package">
+              Поставляется в подарочной упаковке
+            </li>
           </ul>
         </div>
       </div>
-    </section>
-    <blockquote class="reviews">
-      <div class="reviews__wrapper">
-        <h2 class="reviews__title">Отзывы</h2>
-        <div class="reviews__list slider">
-          <p class="reviews__text">
-            Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!
-          </p>
-          <cite class="reviews__author">
-            Анастасия Красильникова
-            <span class="reviews__author-contact">@misssssiskras</span>
-          </cite>
+    </div>
+  </section>
+  <section class="reviews">
+    <div class="container">
+      <blockquote class="reviews__blockquote">
+        <div class="reviews__wrapper">
+          <h2 class="reviews__title">Отзывы</h2>
+          <ul class="reviews__list slider">
+            <li class="reviews__item">
+              <p class="reviews__text">
+                Я молодая мама, но всё равно фотографии не набирали и близко
+                такого количества лайков, как у популярных инстамамочек. В
+                отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои
+                фотографии сразу стали более стильными, а также набирают больше
+                лайков!
+              </p>
+              <cite class="reviews__author">
+                Анастасия Красильникова
+                <span class="reviews__author-contact">@misssssiskras</span>
+              </cite>
+            </li>
+          </ul>
         </div>
         <div class="reviews__nav">
-          <button class="reviews__nav-button back" type="button"></button>
-          <button class="reviews__nav-button next" type="button"></button>
+          <button class="button default-button--back" type="button"></button>
+          <button class="button default-button--next" type="button"></button>
         </div>
         <button class="reviews__send button" type="button">Написать</button>
-      </div>
-    </blockquote>
-    <section class="contacts">
+      </blockquote>
+    </div>
+  </section>
+  <section class="contacts">
+    <div class="container">
       <h2 class="contacts__title">Контакты</h2>
       <table class="contacts__list">
         <tr class="contacts__view">
@@ -116,30 +155,47 @@
         </tr>
         <tr class="contacts__view">
           <th class="contacts__item">адрес</th>
-          <td class="contacts__value">г. Санкт-Петербург,
-            ул. Большая Конюшенная,
-            д. 19/8, офис 101</td>
+          <td class="contacts__value">
+            г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101
+          </td>
         </tr>
       </table>
+
       <div class="contacts__map">
-        <img class="contacts__map-picture" src="https://via.placeholder.com/322x457" alt="Как нас найти" width="322" height="457H">
+        <img
+          class="contacts__map-picture"
+          src="https://via.placeholder.com/322x457"
+          alt="Как нас найти"
+          width="322"
+          height="457H"
+        />
       </div>
-      <button class="contacts__send button" type="button">Напишите нам</button>
-    </section>
-  </main>
-  <footer class="page-footer">
-    <div class="our-social">
+      <button class=" button default-button" type="button">
+        Напишите нам
+      </button>
+    </div>
+  </section>
+</main>
+<footer class="page-footer">
+  <div class="container">
+    <div class="page-footer__social our-social">
       <ul class="our-social__list">
-        <li class="our-social__item instagram"><a class="our-social__link" href="#"></a></li>
-        <li class="our-social__item facebook"><a class="our-social__link" href="#"></a></li>
-        <li class="our-social__item twitter"><a class="our-social__link" href="#"></a></li>
+        <li class="our-social__item our-social__item--instagram">
+          <a class="our-social__link" href="#"></a>
+        </li>
+        <li class="our-social__item our-social__item--facebook">
+          <a class="our-social__link" href="#"></a>
+        </li>
+        <li class="our-social__item our-social__item--twitter">
+          <a class="our-social__link" href="#"></a>
+        </li>
       </ul>
     </div>
     <div class="made">
       <p class="made__by">Разработано</p>
       <a class="made__link" href="http://htmlacademy.ru/"></a>
     </div>
-  </footer>
+  </div>
+</footer>
 </body>
-
 </html>
