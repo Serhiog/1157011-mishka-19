@@ -1,0 +1,77 @@
+.main-categories {
+  background-image: url("../../img/hero-mobile.png");
+  width: 320px;
+  background-repeat: no-repeat;
+  background-position: top;
+  min-height: 373px;
+}
+
+.main-categories__title {
+  color: #010000;
+  font-family: "OpenSansBold", Arial, sans-serif;
+  font-size: 27px;
+  font-weight: 700;
+  line-height: 30px;
+  width: 244px;
+  text-align: center;
+  padding-top: 76px;
+  margin: 0;
+}
+
+.main-categories__list {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+  padding-top: 112px;
+}
+
+.main-categories__item {
+  width: 100%;
+  height: 103px;
+  position: relative;
+}
+
+.main-categories__item +.main-categories__item {
+margin-top: 1px;
+}
+
+.main-categories__link {
+  font-family: "OpenSans", Arial, sans-serif;
+  color: #ffffff;
+  font-size: 19px;
+  font-weight: 700;
+  line-height: 24px;
+  text-align: center;
+  text-decoration: none;
+  width: 100%;
+  height: 103px;
+}
+
+.main-categories__item:nth-child(odd) {
+  background-color: #63D1BB;
+}
+
+.main-categories__item:nth-child(even) {
+  background-color: #56C3B2;
+}
+
+.main-categories__item--interior::after {
+  content: url("../../img/icon-interior.svg");
+  opacity: 0.2;
+  width: 40px;
+  height: 62px;
+  position: absolute;
+  top: 15px;
+}
+
+.main-categories__item--toys::after {
+  content: url("../../img/icon-toy.svg");
+  opacity: 0.2;
+  width: 40px;
+  height: 62px;
+  position: absolute;
+  top: 15px;
+  right: 33px;
+}

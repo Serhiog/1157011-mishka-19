@@ -1,7 +1,28 @@
-@color: red;
-@border: 2px solid black;
+@import "vars";
+@import "blocks/container";
+@import "blocks/page-header";
+@import "blocks/menu";
+@import "blocks/main-categories";
+@import "blocks/site-logo.less";
+@import "blocks/week-item";
 
-.header {
+@font-face {
+  font-family: "OpenSans";
+  src: url("../fonts/opensans.woff");
+  src: url("../fonts/opensans.woff2");
+  font-weight: 400;
+  font-style: normal;
+}
 
-  color: @color;
+@font-face {
+  font-family: "OpenSansBold";
+  src: url("../fonts/opensansbold.woff");
+  src: url("../fonts/opensansbold.woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+
+body {
+  width: 320px;
+  margin: auto;
 }
