@@ -1,10 +1,10 @@
 .week-item__title {
   color: #000;
-  font-family: "OpenSansBold", Arial, sans-serif;
+  font-family: @font700;
   font-size: 25px;
   font-weight: 700;
   line-height: 30px;
-  text-align: center;
+  width: 100%;
   padding: 0;
   margin: 0;
   position: relative;
@@ -14,19 +14,18 @@
 .week-item__title--best-item::after {
   content: "ТОВАР НЕДЕЛИ";
   color: #63d1bb;
-  font-family: "OpenSansBold";
+  font-family: @font700;
   font-size: 17px;
   font-weight: 700;
   line-height: 20px;
   text-transform: uppercase;
   position: absolute;
   display: block;
-  left: 7px;
 }
 
 .week-item__about {
   color: #444444;
-  font-family: "OpenSans";
+  font-family: @font400;
   font-size: 15px;
   font-weight: 400;
   line-height: 24px;
@@ -36,5 +35,49 @@
 }
 
 .week-item__list {
-  padding-top: 34px;
+  margin-top: 34px;
+  font-family: @font400;
+  border-collapse: collapse;
+}
+
+.week-item__properties {
+  border-bottom: 1px solid #ECECEC;
+
+}
+
+.week-item__property {
+  font-family: @font400;
+  font-weight: 400;
+  padding-bottom: 15px;
+  text-align: start;
+  padding-top: 20px;
+
+}
+
+.week-item__value {
+  padding-bottom: 15px;
+  padding-left: 30px;
+  padding-top: 20px;
+}
+
+.week-item__picture {
+  margin-top: 28px;
+}
+
+.week-item__amount {
+  text-align: center;
+  font-family: @font700;
+  font-size: 17px;
+}
+
+.week-item-button {
+  margin: 0 auto;
+  margin-top: 28px;
+  position: relative;
+  &::after {
+    content: url("../../img/zigzag-line-desktop.png");
+    position: absolute;
+    top: 82px;
+    left: -27px;
+  }
 }

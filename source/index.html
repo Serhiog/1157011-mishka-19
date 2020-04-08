@@ -40,8 +40,10 @@
       </h1>
     </div>
     <ul class="main-categories__list">
-        <li class="main-categories__item main-categories__item--interior"><a class="main-categories__link container" href="#">Предметы интерьера</a></li>
-        <li class="main-categories__item main-categories__item--toys"><a class="main-categories__link container" href="#">Детские игрушки</a></li>
+      <li class="main-categories__item main-categories__item--interior"><a class="main-categories__link container"
+                                                                           href="#">Предметы интерьера</a></li>
+      <li class="main-categories__item main-categories__item--toys"><a class="main-categories__link container" href="#">Детские
+        игрушки</a></li>
     </ul>
   </section>
   <section class="week-item">
@@ -69,7 +71,7 @@
         <div class="week-item__picture">
           <img
             class="week-item__image"
-            src=" https://via.placeholder.com/260x315"
+            src="img/triple-set-mobile@1x.jpg"
             alt="Вязаные корзинки"
             width="260"
             height="315"
@@ -79,7 +81,7 @@
           <p class="week-item__amount">Цена: 990 руб.</p>
         </div>
         <div class="week-item__add">
-          <button class="button default-button" type="button">
+          <button class="week-item-button button" type="button">
             Заказать
           </button>
         </div>
@@ -94,20 +96,20 @@
         </div>
         <div class="about-us__advantages">
           <ul class="about-us__list">
-            <li class="about-us__item eco">Экологически чистые материалы</li>
-            <li class="about-us__item rate">
+            <li class="about-us__item about-us__item--eco">Экологически чистые материалы</li>
+            <li class="about-us__item about-us__item--rate">
               Скандинавский стиль по российской цене
             </li>
-            <li class="about-us__item likes">
+            <li class="about-us__item about-us__item--likes">
               Увеличивает лайки на фотографиях
             </li>
-            <li class="about-us__item handle">
+            <li class="about-us__item about-us__item--handle">
               Связано вручную с любовью и умилением
             </li>
-            <li class="about-us__item domestic">
+            <li class="about-us__item about-us__item--domestic">
               Поддержка отечественного производителя
             </li>
-            <li class="about-us__item package">
+            <li class="about-us__item about-us__item--package">
               Поставляется в подарочной упаковке
             </li>
           </ul>
@@ -137,8 +139,8 @@
           </ul>
         </div>
         <div class="reviews__nav">
-          <button class="button default-button--back" type="button"></button>
-          <button class="button default-button--next" type="button"></button>
+          <button class="button reviews__nav-button--back" type="button"></button>
+          <button class="button reviews__nav-button--next" type="button"></button>
         </div>
         <button class="reviews__send button" type="button">Написать</button>
       </blockquote>
@@ -153,23 +155,24 @@
           <td class="contacts__value">info@mimimishkashop.ru</td>
         </tr>
         <tr class="contacts__view">
-          <th class="contacts__item">адрес</th>
+          <th class="contacts__item">адрес:</th>
           <td class="contacts__value">
             г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101
           </td>
         </tr>
       </table>
-
-      <div class="contacts__map">
-        <img
-          class="contacts__map-picture"
-          src="https://via.placeholder.com/322x457"
-          alt="Как нас найти"
-          width="322"
-          height="457H"
-        />
-      </div>
-      <button class=" button default-button" type="button">
+    </div>
+    <div class="contacts__map">
+      <img
+        class="contacts__map-picture"
+        src="img/map-mobile@1x.jpg"
+        alt="Как нас найти"
+        width="322"
+        height="457"
+      />
+    </div>
+    <div class="container">
+      <button class="button contacts__button" type="button">
         Напишите нам
       </button>
     </div>
@@ -177,22 +180,28 @@
 </main>
 <footer class="page-footer">
   <div class="container">
-    <div class="page-footer__social our-social">
-      <ul class="our-social__list">
-        <li class="our-social__item our-social__item--instagram">
-          <a class="our-social__link" href="#"></a>
+    <div class="page-footer__content">
+      <ul class="page-footer__list">
+        <li class="page-footer__item page-footer__item--instagram">
+          <a class="our-social__link" href="#">
+            <img class="our-social__icon" src="img/icon-insta.svg" alt="Наш инстаграмм" width="22" height="21">
+          </a>
         </li>
-        <li class="our-social__item our-social__item--facebook">
-          <a class="our-social__link" href="#"></a>
+        <li class="page-footer__item page-footer__item--facebook">
+          <a class="our-social__link" href="#">
+            <img class="our-social__icon" src="img/icon-fb.svg" alt="Наш facebook" width="22" height="21">
+          </a>
         </li>
-        <li class="our-social__item our-social__item--twitter">
-          <a class="our-social__link" href="#"></a>
+        <li class="page-footer__item page-footer__item--twitter">
+          <a class="our-social__link" href="#">
+            <img class="our-social__icon" src="img/icon-twitter.svg" alt="Наш твиттер" width="22" height="21">
+          </a>
         </li>
       </ul>
     </div>
-    <div class="made">
-      <p class="made__by">Разработано</p>
-      <a class="made__link" href="http://htmlacademy.ru/"></a>
+    <div class="page-footer__made">
+      <p class="page-footer__made-by">Разработано</p>
+      <a class="page-footer__link" href="http://htmlacademy.ru/"></a>
     </div>
   </div>
 </footer>
