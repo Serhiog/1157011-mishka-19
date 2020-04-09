@@ -1,5 +1,10 @@
+//Основы
+@import "global.less";
+@import "fonts.less";
 @import "vars";
 @import "mixins";
+
+//Главная страница
 @import "blocks/container";
 @import "blocks/page-header";
 @import "blocks/menu";
@@ -12,31 +17,13 @@
 @import "blocks/contacts";
 @import "blocks/page-footer";
 
+//Страница каталога
+@import "blocks/catalog";
+@import "blocks/catalog-popup";
+@import "blocks/advert-video";
 
+//Страница формы
+@import "blocks/form";
 
-@font-face {
-  font-family: "OpenSans";
-  src: url("../fonts/opensans.woff");
-  src: url("../fonts/opensans.woff2");
-  font-weight: 400;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "OpenSansBold";
-  src: url("../fonts/opensansbold.woff");
-  src: url("../fonts/opensansbold.woff2");
-  font-weight: 700;
-  font-style: normal;
-}
-
-*, *:before, *:after {
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-}
-
-body {
-  width: 320px;
-  margin: auto;
-}
+//Стандартные блоки
+@import "blocks/title-form.less";

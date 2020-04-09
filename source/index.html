@@ -2,6 +2,9 @@
 <html lang="ru">
 <head>
   <meta charset="utf-8"/>
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>HTML Academy: Мишка</title>
   <link rel="stylesheet" href="css/style.css"/>
 </head>
@@ -40,10 +43,14 @@
       </h1>
     </div>
     <ul class="main-categories__list">
-      <li class="main-categories__item main-categories__item--interior"><a class="main-categories__link container"
-                                                                           href="#">Предметы интерьера</a></li>
-      <li class="main-categories__item main-categories__item--toys"><a class="main-categories__link container" href="#">Детские
-        игрушки</a></li>
+      <li class="main-categories__item main-categories__item--interior">
+        <div class="container"><a class="main-categories__link" href="#">Предметы интерьера</a></div>
+      </li>
+      <li class="main-categories__item main-categories__item--toys">
+        <div class="container">
+          <a class="main-categories__link" href="#">Детские игрушки</a>
+        </div>
+      </li>
     </ul>
   </section>
   <section class="week-item">
@@ -161,17 +168,17 @@
           </td>
         </tr>
       </table>
-    </div>
-    <div class="contacts__map">
-      <img
-        class="contacts__map-picture"
-        src="img/map-mobile@1x.jpg"
-        alt="Как нас найти"
-        width="322"
-        height="457"
-      />
-    </div>
-    <div class="container">
+
+      <div class="contacts__map">
+        <img
+          class="contacts__map-picture"
+          src="img/map-mobile@1x.jpg"
+          alt="Как нас найти"
+          width="322"
+          height="457"
+        />
+      </div>
+
       <button class="button contacts__button" type="button">
         Напишите нам
       </button>

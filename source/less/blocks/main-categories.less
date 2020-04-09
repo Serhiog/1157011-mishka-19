@@ -1,6 +1,5 @@
 .main-categories {
-  background-image: url("../../img/hero-mobile.png");
-  width: 320px;
+  background-image: url("@{path}img/hero-mobile.png");
   background-repeat: no-repeat;
   background-position: top;
   min-height: 373px;
@@ -46,6 +45,17 @@
   width: 106px;
   display: block;
   padding-top: 25px;
+  position: relative;
+}
+
+.main-categories__item--interior .main-categories__link::after {
+  content: url("@{path}img/icon-interior.svg");
+  opacity: 0.2;
+  width: 40px;
+  height: 62px;
+  position: absolute;
+  top: 15px;
+  left: 221px;
 }
 
 .main-categories__item:nth-child(odd) {
@@ -56,22 +66,12 @@
   background-color: #56C3B2;
 }
 
-.main-categories__item--interior::after {
-  content: url("../../img/icon-interior.svg");
+.main-categories__item--toys .main-categories__link::after {
+  content: url("@{path}img/icon-toy.svg");
   opacity: 0.2;
   width: 40px;
   height: 62px;
   position: absolute;
   top: 15px;
-  right: 25px;
-}
-
-.main-categories__item--toys::after {
-  content: url("../../img/icon-toy.svg");
-  opacity: 0.2;
-  width: 40px;
-  height: 62px;
-  position: absolute;
-  top: 15px;
-  right: 33px;
+  left: 218px;
 }

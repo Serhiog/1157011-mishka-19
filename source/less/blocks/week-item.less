@@ -11,16 +11,20 @@
   padding-top: 34px;
 }
 
-.week-item__title--best-item::after {
-  content: "ТОВАР НЕДЕЛИ";
-  color: #63d1bb;
-  font-family: @font700;
-  font-size: 17px;
-  font-weight: 700;
-  line-height: 20px;
-  text-transform: uppercase;
-  position: absolute;
-  display: block;
+.week-item__title {
+  &--best-item {
+    &:after {
+      content: "ТОВАР НЕДЕЛИ";
+      color: #63d1bb;
+      font-family: @font700;
+      font-size: 17px;
+      font-weight: 700;
+      line-height: 20px;
+      text-transform: uppercase;
+      position: absolute;
+      display: block;
+    }
+  }
 }
 
 .week-item__about {
@@ -74,8 +78,9 @@
   margin: 0 auto;
   margin-top: 28px;
   position: relative;
+
   &::after {
-    content: url("../../img/zigzag-line-desktop.png");
+    content: url("@{path}img/zigzag-line-desktop.png");
     position: absolute;
     top: 82px;
     left: -27px;

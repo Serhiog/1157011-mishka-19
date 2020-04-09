@@ -1,0 +1,76 @@
+.catalog__name {
+  background-color: @grey;
+}
+
+.catalog__title {
+  padding-top: 76px;
+  padding-bottom: 74px;
+  font-family: @font700;
+  font-size: 27px;
+  font-weight: 700;
+  line-height: 30px;
+}
+
+.catalog__list {
+  margin-top: 30px;
+}
+
+.catalog__item {
+  margin-bottom: 30px;
+}
+
+.catalog__discription {
+  border: 1px solid #ececec;
+  padding-bottom: 30px;
+}
+
+.catalog__item-name {
+  font-family: @font700;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 24px;
+  padding-left: 28px;
+}
+
+.catalog__detail {
+  font-family: @font400;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 30px;
+  padding-left: 28px;
+}
+
+.catalog__price {
+  .flex;
+  justify-content: space-between;
+  margin-top: 34px;
+  position: relative;
+}
+
+.catalog__item:last-child .catalog__price::before {
+  content: "";
+  width: 204px;
+  height: 1px;
+  background-color: #ececec;
+  position: absolute;
+  left: 26px;
+  top: -13px;
+}
+
+.catalog__amount {
+  font-family: @font700;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 24px;
+  padding-left: 28px;
+}
+
+.catalog__add-cart {
+  font-size: 0;
+
+  &::after {
+    content: url("@{path}img/icon-cart.svg");
+    opacity: 0.2;
+    padding-right: 27px;
+  }
+}
