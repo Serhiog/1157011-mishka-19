@@ -7,6 +7,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>HTML Academy: Мишка</title>
   <link rel="stylesheet" href="css/style.css"/>
+  <link rel="stylesheet" type="text/css" href="css/normalize.css"/>
 </head>
 
 <body>
@@ -19,8 +20,11 @@
                height="35">
         </a>
       </div>
+      <div class="page-header__container-button">
+        <button class="page-header__button--close page-header__button"></button>
+      </div>
       <nav class="page-header__menu menu">
-        <button class="page-header__button"></button>
+
         <ul class="menu__list">
           <li class="menu__item">
             <a class="menu__item-link" href="catalog.html">Каталог товаров</a>
@@ -28,8 +32,12 @@
           <li class="menu__item">
             <a class="menu__item-link" href="#">Вязание на заказ</a>
           </li>
-          <li class="menu__item menu__item--search">Поиск по сайту</li>
-          <li class="menu__item menu__item--cart">Корзина: пока пуста</li>
+          <li class="menu__item menu__item--search">
+            <a class="menu__item-link" href="#">Поиск по сайту</a>
+          </li>
+          <li class="menu__item menu__item--cart">
+            <a class="menu__item-link" href="#">Корзина: пока пуста</a>
+          </li>
         </ul>
       </nav>
     </div>
@@ -164,7 +172,7 @@
         <tr class="contacts__view">
           <th class="contacts__item">адрес:</th>
           <td class="contacts__value">
-            г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101
+            г. Санкт-Петербург, ул. Большая Конюшенная,<br> д. 19/8, офис 101
           </td>
         </tr>
       </table>
@@ -212,5 +220,19 @@
     </div>
   </div>
 </footer>
+<div class="catalog-popup">
+  <div class="container">
+    <h2 class="catalog-pop-up__title">Добавить
+      в корзину</h2>
+    <p class="catalog-pop-up__about">Выберите размер:</p>
+    <ul class="catalog-pop-up__list">
+      <li class="catalog-pop-up__item">S</li>
+      <li class="catalog-pop-up__item">M</li>
+      <li class="catalog-pop-up__item">L</li>
+    </ul>
+    <button class="catalog-pop-up__add button">
+      Добавить
+    </button>
+  </div>
 </body>
 </html>

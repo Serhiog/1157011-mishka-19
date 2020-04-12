@@ -8,9 +8,10 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>HTML Academy: Мишка</title>
   <link rel="stylesheet" href="css/style.css"/>
+  <link rel="stylesheet" type="text/css" href="css/normalize.css"/>
 </head>
 <body>
-<header class="page-header">
+<header class="page-header page-header--temporary">
   <div class="container">
     <div class="page-header__wrapper">
       <div class="page-header__logo site-logo">
@@ -19,17 +20,24 @@
                height="35">
         </a>
       </div>
+      <div class="page-header__container-button">
+        <button class="page-header__button--close page-header__button"></button>
+      </div>
       <nav class="page-header__menu menu">
-        <button class="page-header__button"></button>
+
         <ul class="menu__list">
           <li class="menu__item">
-            <a class="menu__item-link" href="form.html">Каталог товаров</a>
+            <a class="menu__item-link" href="catalog.html">Каталог товаров</a>
           </li>
           <li class="menu__item">
             <a class="menu__item-link" href="#">Вязание на заказ</a>
           </li>
-          <li class="menu__item menu__item--search">Поиск по сайту</li>
-          <li class="menu__item menu__item--cart">Корзина: пока пуста</li>
+          <li class="menu__item menu__item--search">
+            <a class="menu__item-link" href="#">Поиск по сайту</a>
+          </li>
+          <li class="menu__item menu__item--cart">
+            <a class="menu__item-link" href="#">Корзина: пока пуста</a>
+          </li>
         </ul>
       </nav>
     </div>
@@ -67,11 +75,11 @@
       <div class="form-color">
         <h2 class="title-form">Цвет</h2>
         <div class="form-group">
-          <input class="form-color__select" type="checkbox" value="white" name="color" id="white">
+          <input class="form-color__select" type="checkbox" value="white" name="color" id="white" checked>
           <label class="form-color__name form-color__name--1" for="white">Белый</label>
         </div>
         <div class="form-group">
-          <input class="form-color__select" type="checkbox" value="grey" name="color" id="grey">
+          <input class="form-color__select" type="checkbox" value="grey" name="color" id="grey" checked>
           <label class="form-color__name form-color__name--2" for="grey">Серый</label>
         </div>
         <div class="form-group">
@@ -142,7 +150,7 @@
       <button class="button form__button" type="button">ОТПРАВИТЬ ЗАКАЗ</button>
     </form>
 </main>
-<footer class="page-footer">
+<footer class="page-footer page-footer-form">
   <div class="container">
     <div class="page-footer__content">
       <ul class="page-footer__list">

@@ -1,14 +1,16 @@
 .page-header {
   box-shadow: 0 1px 0 #ececec, inset 0 1px 0 #ececec;
-  margin-top: 10px;
+}
+//ВРЕМЕННО ДЛЯ КАТАЛОГА--------------------------------------------
+.page-header--temporary {
+  MARGIN-TOP: 306px;
 }
 
 .page-header__wrapper {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  flex-wrap: wrap;
+  margin-left: auto;
+  .flex();
   min-height: 79px;
+  align-items: center;
 }
 
 .page-header__logo {
@@ -17,7 +19,22 @@
 }
 
 .page-header__menu {
-  padding-top: 20px;
+  margin-top: 17px;
+  display: none;
+}
+
+.page-header__container-button {
+  margin-top: -18px;
+}
+
+.page-header__button--close {
+  background-image: url("@{path}img/icon-menu-close.svg");
+  position: absolute;
+  width: 21px;
+  height: 20px;
+  cursor: pointer;
+  margin-left: -21px;
+  margin-top: -1px;
 }
 
 .page-header__button {
@@ -28,4 +45,5 @@
   border: none;
   cursor: pointer;
 }
+
 

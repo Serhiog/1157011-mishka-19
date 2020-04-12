@@ -1,3 +1,8 @@
+.week-item {
+  margin-top: -7px;
+}
+
+
 .week-item__title {
   color: #000;
   font-family: @font700;
@@ -23,6 +28,7 @@
       text-transform: uppercase;
       position: absolute;
       display: block;
+      top: 67px;
     }
   }
 }
@@ -35,13 +41,19 @@
   line-height: 24px;
   padding: 0;
   margin: 0;
-  padding-top: 37px;
+  margin-top: 48px;
 }
 
 .week-item__list {
-  margin-top: 34px;
+  .m0p0;
   font-family: @font400;
   border-collapse: collapse;
+  margin-left: -2px;
+  margin-top: 19px;
+}
+
+.week-item__list tbody {
+  .m0p0;
 }
 
 .week-item__properties {
@@ -52,16 +64,15 @@
 .week-item__property {
   font-family: @font400;
   font-weight: 400;
-  padding-bottom: 15px;
   text-align: start;
-  padding-top: 20px;
-
+  padding-bottom: 11px;
+  padding-top: 10px;
 }
 
 .week-item__value {
-  padding-bottom: 15px;
-  padding-left: 30px;
-  padding-top: 20px;
+  padding-left: 23px;
+  padding-bottom: 11px;
+  padding-top: 10px;
 }
 
 .week-item__picture {
@@ -72,17 +83,18 @@
   text-align: center;
   font-family: @font700;
   font-size: 17px;
+  margin-top: 23px;
 }
 
 .week-item-button {
   margin: 0 auto;
-  margin-top: 28px;
+  margin-top: 11px;
   position: relative;
 
   &::after {
     content: url("@{path}img/zigzag-line-desktop.png");
     position: absolute;
-    top: 82px;
-    left: -27px;
+    top: 76px;
+    left: -31px;
   }
 }

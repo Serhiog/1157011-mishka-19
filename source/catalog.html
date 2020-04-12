@@ -8,10 +8,11 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>HTML Academy: Мишка</title>
   <link rel="stylesheet" href="css/style.css"/>
+  <link rel="stylesheet" type="text/css" href="css/normalize.css"/>
 </head>
 
 <body>
-<header class="page-header">
+<header class="page-header page-header--temporary">
   <div class="container">
     <div class="page-header__wrapper">
       <div class="page-header__logo site-logo">
@@ -20,8 +21,11 @@
                height="35">
         </a>
       </div>
+      <div class="page-header__container-button">
+        <button class="page-header__button--close page-header__button"></button>
+      </div>
       <nav class="page-header__menu menu">
-        <button class="page-header__button"></button>
+
         <ul class="menu__list">
           <li class="menu__item">
             <a class="menu__item-link" href="catalog.html">Каталог товаров</a>
@@ -29,8 +33,12 @@
           <li class="menu__item">
             <a class="menu__item-link" href="#">Вязание на заказ</a>
           </li>
-          <li class="menu__item menu__item--search">Поиск по сайту</li>
-          <li class="menu__item menu__item--cart">Корзина: пока пуста</li>
+          <li class="menu__item menu__item--search">
+            <a class="menu__item-link" href="#">Поиск по сайту</a>
+          </li>
+          <li class="menu__item menu__item--cart">
+            <a class="menu__item-link" href="#">Корзина: пока пуста</a>
+          </li>
         </ul>
       </nav>
     </div>
@@ -95,7 +103,7 @@
         </div>
         <div class="catalog__discription">
           <p class="catalog__item-name">
-            Большая корзинка для игрушек
+            Большая корзинка<br> для игрушек
           </p>
           <p class="catalog__detail">
             Диаметр 30 см, высота 30 см
