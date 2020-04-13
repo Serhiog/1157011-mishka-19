@@ -1,9 +1,12 @@
 .page-header {
   box-shadow: 0 1px 0 #ececec, inset 0 1px 0 #ececec;
+  @media (min-width: 768px) {
+    box-shadow: none;
+  }
 }
-//ВРЕМЕННО ДЛЯ КАТАЛОГА--------------------------------------------
+
 .page-header--temporary {
-  MARGIN-TOP: 306px;
+  margin-top: 306px;
 }
 
 .page-header__wrapper {
@@ -11,20 +14,63 @@
   .flex();
   min-height: 79px;
   align-items: center;
+  @media (min-width: 768px) {
+    justify-content: space-between;
+  }
 }
 
 .page-header__logo {
   margin: 0 auto;
   padding-top: 22px;
+  @media (min-width: 768px) {
+    margin: 0;
+    width: 371px;
+    padding-top: 22px;
+    padding-bottom: 22px;
+  ;
+  }
+}
+
+.page-header__image {
+  @media (min-width: 768px) {
+    display: none;
+  }
+
+  &--middle {
+    display: none;
+    @media (min-width: 768px) {
+      display: block;
+    }
+  }
 }
 
 .page-header__menu {
   margin-top: 17px;
   display: none;
+  @media (min-width: 768px) {
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+    position: relative;
+    &::before {
+      content: "Бесплатная доставка по России";
+      position: absolute;
+      font-family: @font400;
+      font-size: 15px;
+      font-weight: 400;
+      line-height: 24px;
+      color: #444444;
+      right: -1px;
+      z-index: 1;
+    }
+  }
 }
 
 .page-header__container-button {
   margin-top: -18px;
+  @media (min-width: 768px) {
+    display: none;
+  }
 }
 
 .page-header__button--close {
@@ -45,5 +91,3 @@
   border: none;
   cursor: pointer;
 }
-
-
