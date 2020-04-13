@@ -1,0 +1,307 @@
+.form {
+  .flex(@direction: column);
+  margin-top: 10px;
+}
+
+.form-header__name {
+  font-family: "OpenSansBold", Arial, sans-serif;
+  font-size: 27px;
+  font-weight: 700;
+  line-height: 30px;
+  padding-top: 76px;
+  padding-bottom: 80px;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 29px;
+  padding-top: 72px;
+  padding-bottom: 46px;
+  padding-left: 6px;
+}
+
+.form-header__text {
+  .m0p0;
+  font-family: @font400;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 24px;
+  margin-top: 23px;
+}
+
+.title-form {
+  .m0p0;
+  margin-top: 14px;
+  margin-bottom: 16px;
+  position: relative;
+
+  &::after {
+    content: "";
+    width: 198px;
+    height: 1px;
+    background-color: #62D1BA;
+    position: absolute;
+    top: 9px;
+    left: 62px;
+  }
+}
+
+.form-color {
+  .flex();
+  margin-top: 17px;
+}
+
+.form-group {
+  .flex;
+  width: 100%;
+}
+
+.form-type__select,
+.form-color__select {
+  display: none;
+}
+
+.form-type__select:checked ~ .form-type__name::after {
+  content: "";
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: #62d1ba;;
+  position: absolute;
+  left: -50px;
+  top: 19px;
+}
+
+.form-color__select:checked ~ .form-color__name::after {
+  content: url("@{path}img/icon-tick.svg");
+  width: 22px;
+  height: 16px;
+  border-radius: 50%;
+  position: absolute;
+  left: -57px;
+  top: 15px;
+}
+
+.form-email .title-form::after{
+  left: 82px ;
+  top:6px;
+  width: 179px;
+}
+
+.form-type__name {
+  font-family: @font700;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 18px;
+  margin-left: 62px;
+  margin-bottom: 13px;
+  padding-top: 15px;
+  position: relative;
+
+  &--1::before {
+    content: "";
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid #444444;
+    position: absolute;
+    left: -62px;
+    top: 8px;
+  }
+
+  &--2::before {
+    content: "";
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid #444444;
+    position: absolute;
+    left: -63px;
+    top: 7px;
+
+  }
+}
+
+.form-color__name {
+  font-family: @font700;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 18px;
+  margin-left: 62px;
+  margin-bottom: 33px;
+  padding-top: 15px;
+  position: relative;
+
+  &--1::before {
+    content: "";
+    width: 40px;
+    height: 39px;
+    border: 1px solid #444444;
+    position: absolute;
+    left: -63px;
+    top: 8px;
+  }
+
+  &--2::before {
+    content: "";
+    width: 40px;
+    height: 39px;
+    border: 1px solid #444444;
+    position: absolute;
+    left: -63px;
+    top: 3px;
+  }
+
+  &--3::before {
+    content: "";
+    width: 40px;
+    height: 39px;
+    border: 1px solid #444444;
+    position: absolute;
+    left: -63px;
+    top: -1px;
+  }
+
+  &--4::before {
+    content: "";
+    width: 40px;
+    height: 39px;
+    border: 1px solid #444444;
+    position: absolute;
+    left: -63px;
+    top: -1px;
+  }
+
+  &--5::before {
+    content: "";
+    width: 40px;
+    height: 39px;
+    border: 1px solid #444444;
+    position: absolute;
+    left: -63px;
+    top: 0px;
+  }
+
+  &--6::before {
+    content: "";
+    width: 40px;
+    height: 39px;
+    border: 1px solid #444444;
+    position: absolute;
+    left: -63px;
+    top: 0px;
+  }
+
+  &--3 {
+    padding-top: 10px;
+  }
+
+  &--4 {
+    padding-top: 10px;
+  }
+
+  &--5 {
+    padding-top: 10px;
+  }
+
+  &--6 {
+    padding-top: 10px;
+  }
+}
+
+
+.form-fullname .title-form{
+  margin-top: 11px;
+  margin-bottom: 25px;
+}
+
+
+
+.form-fullname__select::-webkit-input-placeholder, .form-tel__select::-webkit-input-placeholder, .form-email__select, .form-extra__select {
+  color: #444444;
+  font-family: @font400;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 18px;
+  opacity: 0.3;
+  padding-bottom: 17px;
+}
+
+.form-fullname__select, .form-tel__select, .form-email__select, {
+  border: none;
+  border-bottom: 2px solid black;
+  width: 100%;
+  padding-bottom: 13px;
+  margin-bottom: 5px;
+}
+
+.form-header {
+  background-color: @grey;
+}
+
+.form-tel, .form-email, .form-extra {
+  position: relative;
+}
+
+.form-tel {
+  margin-top: 13px;
+  margin-bottom: 21px;
+  & .title-form {
+    padding-bottom: 7px;
+  }
+}
+
+.form-email {
+  margin-top: -5px;
+  & .title-form {
+    padding-bottom: 6px;
+  }
+}
+
+.form-extra {
+  margin-top: 14px;
+  & .title-form {
+    padding-bottom: 11px;
+  }
+  & ::after {
+    left: 62px;
+  }
+}
+
+.form-tel .title-form::after {
+  content: "";
+  width: 198px;
+  height: 1px;
+  background-color: #62D1BA;
+  position: absolute;
+  top: 8px;
+  margin-left: 31px;
+  left: 31px;
+}
+
+.form-extra__select {
+  width: 100%;
+  padding-top: 14px;
+  padding-left: 15px;
+  min-height: 142px;
+  margin-bottom: -9px;
+  border: 2px solid black;
+}
+
+.form__attention--info {
+  font-family: @font400;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16px;
+}
+
+.form__attention {
+  margin-top: 18px;
+}
+
+.form__button {
+  margin-top: 31px;
+  padding-left: 0px;
+}
+
+.page-footer-form {
+  margin-top: 55px;
+}
