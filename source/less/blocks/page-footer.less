@@ -8,6 +8,9 @@
   padding-top: 30px;
   display: flex;
   justify-content: center;
+  @media (min-width: 768px) {
+    flex-grow: 1;
+  }
 }
 
 .page-footer__list {
@@ -22,6 +25,8 @@
 .page-footer__made {
   .flex;
   justify-content: center;
+  @media (min-width: 768px) {
+  }
 }
 
 .page-footer__made-by {
@@ -32,4 +37,14 @@
   .m0p0;
   padding-top: 53px;
   margin-left: -58px;
+  @media (min-width: 768px) {
+    padding-top: 30px;
+  }
+}
+
+.page-footer .container {
+  @media (min-width: 768px) {
+    .flex();
+    justify-content: center;
+  }
 }

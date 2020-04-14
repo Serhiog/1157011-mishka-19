@@ -1,6 +1,9 @@
 .about-us__header {
   margin-top: 70px;
   margin-left: -2px;
+  @media (min-width: 768px) {
+    margin-top: 110px;
+  }
 }
 
 
@@ -10,12 +13,23 @@
   font-weight: 700;
   color: #000000;
   line-height: 30px;
+  @media (min-width: 768px) {
+    font-size: 43px;
+    line-height: 50px;
+  }
 }
 
 .about-us__list {
   margin: 0;
   padding: 0;
   list-style-type: none;
+
+  @media (min-width: 768px) {
+    flex-direction: column;
+    display: flex;
+    flex-wrap: wrap;
+    height: 400px;
+  }
 }
 
 .about-us__item {
@@ -25,10 +39,16 @@
   line-height: 20px;
   margin-top: 85px;
   position: relative;
+  @media (min-width: 768px) {
+    font-size: 20px;
+  }
 }
 
 .about-us__item--eco {
   width: 175px;
+  @media (min-width: 768px) {
+    width: 300px;
+  }
 
   &::before {
     content: url("@{path}img/icon-1.png");
@@ -40,6 +60,9 @@
 
 .about-us__item--rate {
   width: 200px;
+  @media (min-width: 768px) {
+    width: 300px;
+  }
 
   &::before {
     content: url("@{path}img/icon-3.png");
@@ -52,6 +75,9 @@
 .about-us__item--likes {
   width: 181px;
   margin-top: 81px;
+  @media (min-width: 768px) {
+    width: 300px;
+  }
 
   &::before {
     content: url("@{path}img/icon-5.png");
@@ -63,6 +89,9 @@
 
 .about-us__item--handle {
   width: 211px;
+  @media (min-width: 768px) {
+    width: 300px;
+  }
 
   &::before {
     content: url("@{path}img/icon-2.png");
@@ -75,6 +104,9 @@
 .about-us__item--domestic {
   width: 251px;
   margin-top: 82px;
+  @media (min-width: 768px) {
+    width: 300px;
+  }
 
   &::before {
     content: url("@{path}img/icon-4.png");
@@ -87,6 +119,9 @@
 .about-us__item--package {
   width: 198px;
   margin-top: 82px;
+  @media (min-width: 768px) {
+    width: 300px;
+  }
 
   &::before {
     content: url("@{path}img/icon-6.png");

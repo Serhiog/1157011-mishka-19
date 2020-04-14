@@ -1,5 +1,14 @@
 .contacts {
-  margin-top: 87px;
+  margin-top: 150px;
+  position: relative;
+  @media (min-width: 768px) {
+    &::before {
+      content: url("@{path}img/icon-flag.svg");
+      position: absolute;
+      top: -26px;
+      left: 709px;
+    }
+  }
 }
 
 .contacts__title {
@@ -8,6 +17,10 @@
   font-size: 18px;
   font-weight: 700;
   line-height: 30px;
+
+  @media (min-width: 768px) {
+    font-size: 43px;
+  }
 }
 
 .contacts__list {
@@ -15,6 +28,17 @@
   border-collapse: collapse;
   margin-top: 26px;
   display: block;
+  @media (min-width: 768px) {
+    display: block;
+  }
+}
+
+.contacts__list tbody {
+  @media (min-width: 768px) {
+    .flex();
+    justify-content: space-between;
+    align-items: baseline;
+  }
 }
 
 .contacts__view {
@@ -34,6 +58,9 @@
   width: 92px;
   display: block;
   margin-left: -24px;
+  @media (min-width: 768px) {
+    font-size: 17px;
+  }
 }
 
 .contacts__value {
@@ -47,11 +74,25 @@
   display: block;
   width: 163px;
   padding-left: 9px;
+  @media (min-width: 768px) {
+    font-size: 17px;
+    width: 207px;
+    br {
+      display: none;
+    }
+  }
 }
 
-.contacts__value:nth-child(1n) {
+.contacts__view:nth-child(1n) {
   border-bottom: 1px solid #62D1BA;
 }
+
+.contacts__view:last-child {
+  @media (min-width: 768px) {
+    border-bottom: none;
+  }
+}
+
 
 .contacts__map {
   margin-top: 37px;
@@ -61,4 +102,9 @@
 .contacts__button {
   margin-top: 34px;
   padding-right: 17px;
+
+  @media (min-width: 768px) {
+    margin: 0 auto;
+    display: block;
+  }
 }

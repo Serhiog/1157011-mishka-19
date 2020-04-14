@@ -1,13 +1,33 @@
 .reviews {
   margin-top: -4px;
+  @media (min-width: 768px) {
+    margin-top: 130px;
+    background-image: url("@{path}img/review@1x.jpg");
+    background-repeat: no-repeat;
+    padding-bottom: 52px;
+    position: relative;
+    &::after {
+      content: url("@{path}img/big-zigzag-line-desktop.png");
+      bottom: -93px;
+      position: absolute;
+    }
+  }
 }
 
 .reviews__blockquote {
   .m0p0;
+  @media (min-width: 768px) {
+    .flex();
+    flex-direction: column;
+  }
 }
 
 .reviews__wrapper {
   margin-top: 61px;
+  @media (min-width: 768px) {
+    width: 300px;
+    margin-top: -33px;
+  }
 }
 
 .reviews__title {
@@ -16,6 +36,9 @@
   font-weight: 700;
   line-height: 30px;
   .m0p0;
+  @media (min-width: 768px) {
+    font-size: 43px;
+  }
 }
 
 .reviews__list {
@@ -31,6 +54,11 @@
   .m0p0;
   width: 257px;
   margin-top: 24px;
+  @media (min-width: 768px) {
+    font-size: 17px;
+    margin-top: 65px;
+    width: 650px;
+  }
 }
 
 .reviews__author {
@@ -41,6 +69,9 @@
   font-weight: 700;
   line-height: 24px;
   font-style: normal;
+  @media (min-width: 768px) {
+    margin-top: 63px;
+  }
 }
 
 .reviews__author-contact {
@@ -56,12 +87,21 @@
 .reviews__nav {
   .flex;
   margin-top: 33px;
+  @media (min-width: 768px) {
+    order: 1;
+    margin-top: -52px;
+    margin-left: auto;
+  }
 }
 
 .reviews__nav-button--back {
   width: 130px;
   border: 1px solid #ececec;
   position: relative;
+  @media (min-width: 768px) {
+    border: none;
+    width: 110px;
+  }
 
   &::before {
     content: url("@{path}img/icon-left-arrow.svg");
@@ -75,6 +115,10 @@
   width: 130px;
   border: 1px solid #ececec;
   position: relative;
+  @media (min-width: 768px) {
+    border: none;
+    width: 110px;
+  }
 
   &::before {
     content: url("@{path}img/icon-right-arrow.svg");
@@ -88,11 +132,20 @@
   margin-top: 38px;
   position: relative;
   padding-left: 0px;
+  @media (min-width: 768px) {
+    margin-top: 54px;
+    width: 175px;
+    margin-left: auto;
+    order: -1;
+  }
 
   &::after {
     content: url("@{path}img/zigzag-line-desktop.png");
     position: absolute;
     left: -32px;
     top: 85px;
+    @media (min-width: 768px) {
+      content: none;
+    }
   }
 }

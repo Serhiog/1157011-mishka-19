@@ -1,5 +1,3 @@
-.advert-video {
-}
 
 .advert-video__wrapper {
   border: 1px solid #ececec;
@@ -23,6 +21,9 @@
   width: 126px;
   padding-left: 91px;
   position: relative;
+  @media (min-width: 768px) {
+    width: 100%;
+  }
 
   &:before {
     content: url("@{path}img/icon-video.svg");

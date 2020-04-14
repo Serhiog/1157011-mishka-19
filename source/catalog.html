@@ -12,13 +12,15 @@
 </head>
 
 <body>
-<header class="page-header page-header--temporary">
+<header class="page-header">
   <div class="container">
     <div class="page-header__wrapper">
-      <div class="page-header__logo site-logo">
-        <a class="site-logo__link" href="index.html">
-          <img class="site-logo__image" src="img/logo-mobile.svg" alt="Логотип сайта" width="86"
-               height="35">
+      <div class="page-header__logo">
+        <a class="page-header__link" href="index.html">
+          <img class="page-header__image" src="img/logo-mobile.svg" alt="Логотип сайта" width="86"
+               height="35"/>
+          <img class="page-header__image--middle" src="img/logo-tablet.svg" alt="Логотип сайта" width="113"
+               height="46"/>
         </a>
       </div>
       <div class="page-header__container-button">
@@ -56,9 +58,12 @@
     <div class="container">
       <div class="catalog__item">
         <div class="catalog__picture">
-          <img class="catalog__image" src="img/photo-hare-mobile@1x.jpg"
-               alt="Фотография товара Зайчик-попрыгайчик"
-               width="260" height="195">
+          <picture>
+            <source media="(min-width: 768px)" srcset="img/photo-hare-tablet@1x.jpg">
+            <img class="catalog__image" src="img/photo-hare-mobile@1x.jpg"
+                 alt="Фотография товара Зайчик-попрыгайчик"
+                 width="260" height="195">
+          </picture>
         </div>
         <div class="catalog__discription">
           <p class="catalog__item-name">
@@ -77,9 +82,12 @@
       </div>
       <div class="catalog__item">
         <div class="catalog__picture">
-          <img class="catalog__image" src="img/photo-bowl-mobile@1x.jpg"
-               alt="Фотография товара Корзинка для белья"
-               width="260" height="195">
+          <picture>
+            <source media="(min-width: 768px)" srcset="img/photo-bowl-tablet@1x.jpg">
+            <img class="catalog__image" src="img/photo-bowl-mobile@1x.jpg"
+                 alt="Фотография товара Корзинка для белья"
+                 width="260" height="195">
+          </picture>
         </div>
         <div class="catalog__discription">
           <p class="catalog__item-name">
@@ -98,8 +106,11 @@
       </div>
       <div class="catalog__item">
         <div class="catalog__picture">
-          <img class="catalog__image" src="img/photo-toys-mobile@1x.jpg"
-               alt="Фотография товара Большая корзинка для игрушек" width="260" height="195">
+          <picture>
+            <source media="(min-width: 768px)" srcset="img/photo-toys-tablet@1x.jpg">
+            <img class="catalog__image" src="img/photo-toys-mobile@1x.jpg"
+                 alt="Фотография товара Большая корзинка для игрушек" width="260" height="195">
+          </picture>
         </div>
         <div class="catalog__discription">
           <p class="catalog__item-name">
@@ -124,7 +135,11 @@
         <h2 class="advert-video__title">
           Процесс производства
         </h2>
-        <img class="advert-video__play" src="img/video-mobile@1x.jpg">
+        <picture>
+          <source media="(min-width: 768px)" srcset="img/video-tablet@1x.jpg">
+          <img class="advert-video__play" src="img/video-mobile@1x.jpg" alt="Видео">
+        </picture>
+
         <p class="advert-video__about">
           По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.
         </p>
