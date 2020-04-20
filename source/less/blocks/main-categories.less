@@ -4,8 +4,8 @@
   background-position: top;
   min-height: 373px;
   background-position-y: -16px;
-  @media (min-width: 768px) {
-    background-image: url("@{path}img/hero-desktop@1x.jpg");
+  @media (min-width: 770px) {
+    background-image: url("@{path}img/hero-tablet@1x.jpg");
     background-position-y: 0;
     margin-top: -65px;
     position: relative;
@@ -14,6 +14,10 @@
     flex-wrap: wrap;
     flex-direction: column;
     min-height: 746px;
+  }
+  @media (min-width: 1154px) {
+    margin-top: -67px;
+    background-image: url("@{path}img/hero-desktop@1x.jpg");
   }
 }
 
@@ -27,8 +31,8 @@
   text-align: center;
   padding-top: 71px;
   margin: 0;
-  margin-left: 7px;
-  @media (min-width: 768px) {
+  margin-left: -22px;
+  @media (min-width: 770px) {
     margin: 0 auto;
     font-family: @font700;
     font-size: 43px;
@@ -41,6 +45,10 @@
 
     margin-top: 85px;
   }
+  @media (min-width: 1154px) {
+    font-size: 53px;
+    width: 630px;
+  }
 }
 
 .main-categories__list {
@@ -49,17 +57,22 @@
   display: flex;
   flex-wrap: wrap;
   margin-top: 123px;
-  @media (min-width: 768px) {
+  width: 320px;
+  margin-left: -30px;
+  @media (min-width: 770px) {
     margin-top: auto;
     flex-direction: row;
-    padding-right: 50px;
-    padding-left: 50px;
     position: relative;
+    width: auto;
+    margin-left: 0;
     &::after {
       content: url("@{path}img/bg-zigzag-fill.svg");
       position: absolute;
       top: 103px;
     }
+  }
+  @media (min-width: 1154px) {
+    padding: 0;
   }
 }
 
@@ -68,7 +81,7 @@
   width: 100%;
   height: 103px;
   position: relative;
-  @media (min-width: 768px) {
+  @media (min-width: 770px) {
     width: auto;
     flex-grow: 1;
     min-height: 119px;
@@ -77,7 +90,7 @@
 
 .main-categories__item + .main-categories__item {
   margin-top: 1px;
-  @media (min-width: 768px) {
+  @media (min-width: 770px) {
     margin: 0;
   }
 }
@@ -102,7 +115,10 @@
   height: 62px;
   position: absolute;
   top: 22px;
-  left: 214px;
+  left: 170px;
+  @media (min-width: 1154px) {
+    left: 394px;
+  }
 }
 
 .main-categories__item:nth-child(odd) {
@@ -120,5 +136,8 @@
   height: 62px;
   position: absolute;
   top: 20px;
-  left: 203px;
+  left: 158px;
+  @media (min-width: 1154px) {
+    left: 394px;
+  }
 }

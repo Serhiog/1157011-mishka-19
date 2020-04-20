@@ -7,7 +7,6 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>HTML Academy: Мишка</title>
   <link rel="stylesheet" href="css/style.css"/>
-  <link rel="stylesheet" type="text/css" href="css/normalize.css"/>
 </head>
 
 <body>
@@ -16,17 +15,17 @@
     <div class="page-header__wrapper">
       <div class="page-header__logo">
         <a class="page-header__link" href="index.html">
-          <img class="page-header__image" src="img/logo-mobile.svg" alt="Логотип сайта" width="86"
-               height="35"/>
-          <img class="page-header__image--middle" src="img/logo-tablet.svg" alt="Логотип сайта" width="113"
-               height="46"/>
+          <picture>
+            <source media="(min-width: 1154px)" srcset="img/logo-desktop.svg">
+            <source media="(min-width: 770px)" srcset="img/logo-tablet.svg">
+            <img class="page-header__image" src="img/logo-mobile.svg" alt="Логотип сайта""/>
+          </picture>
         </a>
       </div>
       <div class="page-header__container-button">
         <button class="page-header__button--close page-header__button"></button>
       </div>
       <nav class="page-header__menu menu">
-
         <ul class="menu__list">
           <li class="menu__item">
             <a class="menu__item-link" href="catalog.html">Каталог товаров</a>
@@ -41,66 +40,83 @@
             <a class="menu__item-link" href="#">Корзина: пока пуста</a>
           </li>
         </ul>
+        <ul class="menu__list-extra">
+          <li class="menu__item">
+            <a class="menu__item-link" href="#">Новые поступления</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__item-link" href="#">Распродажа</a>
+          </li>
+        </ul>
       </nav>
     </div>
   </div>
 </header>
 <main>
-  <section class="main-categories">
+  <div class="container__grey--1">
     <div class="container">
-      <h1 class="main-categories__title">
-        Милые штуки<br> ручной<br> работы для дома
-      </h1>
-    </div>
-    <ul class="main-categories__list">
-      <li class="main-categories__item main-categories__item--interior">
-        <div class="container"><a class="main-categories__link" href="#">Предметы интерьера</a></div>
-      </li>
-      <li class="main-categories__item main-categories__item--toys">
+      <section class="main-categories">
         <div class="container">
-          <a class="main-categories__link" href="#">Детские игрушки</a>
+          <h1 class="main-categories__title">
+            Милые штуки<br> ручной<br> работы для дома
+          </h1>
         </div>
-      </li>
-    </ul>
-  </section>
+        <ul class="main-categories__list">
+          <li class="main-categories__item main-categories__item--interior">
+            <div class="container"><a class="main-categories__link" href="#">Предметы интерьера</a></div>
+          </li>
+          <li class="main-categories__item main-categories__item--toys">
+            <div class="container">
+              <a class="main-categories__link" href="#">Детские игрушки</a>
+            </div>
+          </li>
+        </ul>
+
+      </section>
+    </div>
+  </div>
   <section class="week-item">
     <div class="container">
-      <div class="week-item__wrapper"><h2 class="week-item__title week-item__title--best-item">Вязаные корзинки</h2>
-        <p class="week-item__about">
-          Экологически чистая пряжа, ручная работа. Доступны в шести
-          расцветках и трех размерах.
-        </p>
-        <table class="week-item__list">
-          <tr class="week-item__properties">
-            <th class="week-item__property">Цвет:</th>
-            <td class="week-item__value">«Тиффани»/серый</td>
-          </tr>
-          <tr class="week-item__properties">
-            <th class="week-item__property">Диаметр:</th>
-            <td class="week-item__value">25 см</td>
-          </tr>
-          <tr class="week-item__properties">
-            <th class="week-item__property">Высота:</th>
-            <td class="week-item__value">15 см</td>
-          </tr>
-        </table>
-
-        <div class="week-item__picture">
-          <img
-            class="week-item__image"
-            src="img/triple-set-mobile@1x.jpg"
-            alt="Вязаные корзинки"
-            width="260"
-            height="315"
-          />
-        </div>
-        <div class="week-item__price">
-          <p class="week-item__amount">Цена: 990 руб.</p>
-        </div>
-        <div class="week-item__add">
-          <button class="week-item-button button" type="button">
-            Заказать
-          </button>
+      <div class="week-item__wrapper">
+        <h2 class="week-item__title week-item__title--best-item">Вязаные корзинки</h2>
+        <div class="week-item__common">
+          <div class="week-item__main-info">
+            <p class="week-item__about">
+              Экологически чистая пряжа, ручная работа. Доступны в шести
+              расцветках и трех размерах.
+            </p>
+            <table class="week-item__list">
+              <tr class="week-item__properties">
+                <th class="week-item__property">Цвет:</th>
+                <td class="week-item__value">«Тиффани»/серый</td>
+              </tr>
+              <tr class="week-item__properties">
+                <th class="week-item__property">Диаметр:</th>
+                <td class="week-item__value">25 см</td>
+              </tr>
+              <tr class="week-item__properties">
+                <th class="week-item__property">Высота:</th>
+                <td class="week-item__value">15 см</td>
+              </tr>
+            </table>
+          </div>
+          <div class="week-item__deatails">
+            <div class="week-item__price">
+              <p class="week-item__amount">Цена: 990 руб.</p>
+            </div>
+            <div class="week-item__add">
+              <button class="week-item-button button" type="button">
+                Заказать
+              </button>
+            </div>
+          </div>
+          <div class="week-item__picture">
+            <picture>
+              <source media="(min-width: 1154px)" srcset="img/triple-set-desktop@1x.jpg">
+              <source media="(min-width: 770px)" srcset="img/triple-set-tablet@1x.jpg">
+              <img class="week-item__image" src="img/triple-set-mobile@1x.jpg" alt="Вязаные корзинки"/>
+            </picture>
+          </div>
         </div>
       </div>
     </div>
@@ -117,7 +133,7 @@
             <li class="about-us__item about-us__item--rate">
               Скандинавский стиль по российской цене
             </li>
-            <li class="about-us__item about-us__item--likes">
+            <li class="about-us__item--likes about-us__item ">
               Увеличивает лайки на фотографиях
             </li>
             <li class="about-us__item about-us__item--handle">
@@ -126,10 +142,9 @@
             <li class="about-us__item about-us__item--domestic">
               Поддержка отечественного производителя
             </li>
-            <li class="about-us__item about-us__item--package">
+            <li class=" about-us__item--package about-us__item">
               Поставляется в подарочной упаковке
             </li>
-
           </ul>
         </div>
       </div>
@@ -137,30 +152,34 @@
   </section>
   <section class="reviews">
     <div class="container">
+      <h2 class="reviews__title">Отзывы</h2>
       <blockquote class="reviews__blockquote">
         <div class="reviews__wrapper">
-          <h2 class="reviews__title">Отзывы</h2>
           <ul class="reviews__list slider">
             <li class="reviews__item">
               <p class="reviews__text">
                 Я молодая мама, но всё равно фотографии не набирали и близко
                 такого количества лайков, как у популярных инстамамочек. В
-                отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои
+                отчаянии, я накупила аксессуаров и игрушек в Мишке,<br> и мои
                 фотографии сразу стали более стильными, а также набирают больше
                 лайков!
               </p>
-              <cite class="reviews__author">
-                Анастасия Красильникова
-                <span class="reviews__author-contact">@misssssiskras</span>
-              </cite>
             </li>
           </ul>
         </div>
         <div class="reviews__nav">
-          <button class="button reviews__nav-button--back" type="button"></button>
-          <button class="button reviews__nav-button--next" type="button"></button>
+          <cite class="reviews__author">
+            Анастасия Красильникова
+            <span class="reviews__author-contact">@misssssiskras</span>
+          </cite>
+          <div class="reviews__btns">
+            <button class="button reviews__nav-button--back" type="button"></button>
+            <button class="button reviews__nav-button--next" type="button"></button>
+          </div>
         </div>
-        <button class="reviews__send button" type="button">Написать</button>
+        <div class="reviews__btn">
+          <button class="reviews__send button" type="button">Написать</button>
+        </div>
       </blockquote>
     </div>
   </section>
@@ -170,60 +189,69 @@
       <table class="contacts__list">
         <tr class="contacts__view">
           <th class="contacts__item">e-mail:</th>
-          <td class="contacts__value">info@mimimishkashop.ru</td>
+          <td class="contacts__value contacts__value--mod">info@mimimishkashop.ru</td>
         </tr>
         <tr class="contacts__view">
           <th class="contacts__item">адрес:</th>
-          <td class="contacts__value">
-            г. Санкт-Петербург, ул. Большая Конюшенная,<br> д. 19/8, офис 101
+          <td class="contacts__value contacts__value--mod2">
+            г. Санкт-Петербург,<br> ул. Большая Конюшенная,<br> д. 19/8, офис 101
           </td>
         </tr>
       </table>
-
       <div class="contacts__map">
-        <img
-          class="contacts__map-picture"
-          src="img/map-mobile@1x.jpg"
-          alt="Как нас найти"
-          width="322"
-          height="457"
-        />
+        <picture>
+          <source media="(min-width: 1154px)" srcset="img/map-desktop@1x.jpg">
+          <source media="(min-width: 770px)" srcset="img/map-tablet@1x.jpg">
+          <img
+            class="contacts__map-picture"
+            src="img/map-mobile@1x.jpg"
+            alt="Как нас найти"
+          />
+        </picture>
       </div>
-
       <button class="button contacts__button" type="button">
         Напишите нам
       </button>
     </div>
   </section>
 </main>
-<footer class="page-footer">
+<footer class="page-footer page-footer--index">
   <div class="container">
-    <picture>
-      <source media="(min-width: 768px)" srcset="img/logo-footer.svg 1x">
-      <img>
-    </picture>
-    <div class="page-footer__content">
-      <ul class="page-footer__list">
-        <li class="page-footer__item page-footer__item--instagram">
-          <a class="our-social__link" href="#">
-            <img class="our-social__icon" src="img/icon-insta.svg" alt="Наш инстаграмм" width="22" height="21">
-          </a>
-        </li>
-        <li class="page-footer__item page-footer__item--facebook">
-          <a class="our-social__link" href="#">
-            <img class="our-social__icon" src="img/icon-fb.svg" alt="Наш facebook" width="22" height="21">
-          </a>
-        </li>
-        <li class="page-footer__item page-footer__item--twitter">
-          <a class="our-social__link" href="#">
-            <img class="our-social__icon" src="img/icon-twitter.svg" alt="Наш твиттер" width="22" height="21">
-          </a>
-        </li>
-      </ul>
-    </div>
-    <div class="page-footer__made">
-      <p class="page-footer__made-by">Разработано</p>
-      <a class="page-footer__link" href="http://htmlacademy.ru/"></a>
+    <div class="page-footer__common">
+      <div class="page-footer__logo">
+        <picture>
+          <source media="(min-width: 770px)" srcset="img/logo-footer.svg">
+          <img src="" width="102" height="34" alt="Логотип сайта">
+        </picture>
+      </div>
+      <div class="page-footer__content">
+        <ul class="page-footer__list">
+          <li class="page-footer__item page-footer__item--instagram">
+            <a class="our-social__link" href="#">
+              <img class="our-social__icon" src="img/icon-insta.svg" alt="Наш инстаграмм" width="22" height="21">
+            </a>
+          </li>
+          <li class="page-footer__item page-footer__item--facebook">
+            <a class="our-social__link" href="#">
+              <img class="our-social__icon" src="img/icon-fb.svg" alt="Наш facebook" width="22" height="21">
+            </a>
+          </li>
+          <li class="page-footer__item page-footer__item--twitter">
+            <a class="our-social__link" href="#">
+              <img class="our-social__icon" src="img/icon-twitter.svg" alt="Наш твиттер" width="22" height="21">
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="page-footer__made">
+        <p class="page-footer__made-by">Разработано</p>
+        <a class="page-footer__link" href="http://htmlacademy.ru/">
+          <svg width="40px" height="45px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60">
+            <path fill="#63D1BB"
+                  d="M30.2 5h-.2l-19.7 2.1v36.2l19.7 11.7 19.7-11.7v-36.2l-19.5-2.1zm17 36.8l-17.2 10.2-17.2-10.2v-14.8l17.1 10.2v1.8l-11.7-7v1.8l11.8 7.1v1.9l-11.8-7v1.8l11.8 7 11.9-7.1v-7.6l5.3-3.2v15.1zm-.1-17l-4.7 2.8-2.2 1.3-10.3-6.1v1.8l8.8 5.3h-.1l-.2.1-1.3.7-7.3-4.3v1.8l5.8 3.4-1.4.9-4.3-2.6v1.8l2.9 1.7-2.9 1.7-17-10.1 17-10.2 17.2 10zm.1-1.8l-17.3-10.2-17.1 10.2v-13.6l17.2-1.8 17.2 1.8v13.6z"/>
+          </svg>
+        </a>
+      </div>
     </div>
   </div>
 </footer>

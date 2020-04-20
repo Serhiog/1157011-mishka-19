@@ -1,7 +1,14 @@
+.about-us {
+  @media (min-width: 1154px) {
+    margin-top: 150px;
+  }
+}
+
+
 .about-us__header {
   margin-top: 70px;
   margin-left: -2px;
-  @media (min-width: 768px) {
+  @media (min-width: 770px) {
     margin-top: 110px;
   }
 }
@@ -13,9 +20,14 @@
   font-weight: 700;
   color: #000000;
   line-height: 30px;
-  @media (min-width: 768px) {
+  @media (min-width: 770px) {
     font-size: 43px;
     line-height: 50px;
+  }
+  @media (min-width: 1154px) {
+    font-size: 53px;
+    margin-left: 145px;
+    margin-bottom: 0;
   }
 }
 
@@ -24,11 +36,16 @@
   padding: 0;
   list-style-type: none;
 
-  @media (min-width: 768px) {
-    flex-direction: column;
+  @media (min-width: 770px) {
+    flex-direction: row;
     display: flex;
     flex-wrap: wrap;
-    height: 400px;
+    width: 100%;
+    justify-content: space-between;
+  }
+  @media (min-width: 1154px) {
+    width: 660px;
+    margin-left: 148px
   }
 }
 
@@ -39,15 +56,18 @@
   line-height: 20px;
   margin-top: 85px;
   position: relative;
-  @media (min-width: 768px) {
+  @media (min-width: 770px) {
     font-size: 20px;
+    margin-top: 117px;
+  }
+  @media (min-width: 1154px) {
   }
 }
 
 .about-us__item--eco {
   width: 175px;
-  @media (min-width: 768px) {
-    width: 300px;
+  @media (min-width: 770px) {
+    width: 216px;
   }
 
   &::before {
@@ -60,8 +80,9 @@
 
 .about-us__item--rate {
   width: 200px;
-  @media (min-width: 768px) {
-    width: 300px;
+  @media (min-width: 770px) {
+    width: 255px;
+    order: 2;
   }
 
   &::before {
@@ -74,9 +95,9 @@
 
 .about-us__item--likes {
   width: 181px;
-  margin-top: 81px;
-  @media (min-width: 768px) {
-    width: 300px;
+  @media (min-width: 770px) {
+    width: 230px;
+    order: 4;
   }
 
   &::before {
@@ -89,8 +110,9 @@
 
 .about-us__item--handle {
   width: 211px;
-  @media (min-width: 768px) {
+  @media (min-width: 770px) {
     width: 300px;
+    order: 1;
   }
 
   &::before {
@@ -103,9 +125,9 @@
 
 .about-us__item--domestic {
   width: 251px;
-  margin-top: 82px;
-  @media (min-width: 768px) {
+  @media (min-width: 770px) {
     width: 300px;
+    order: 3;
   }
 
   &::before {
@@ -118,9 +140,9 @@
 
 .about-us__item--package {
   width: 198px;
-  margin-top: 82px;
-  @media (min-width: 768px) {
-    width: 300px;
+  @media (min-width: 770px) {
+    width: 295px;
+    order: 5;
   }
 
   &::before {
