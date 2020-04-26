@@ -1,5 +1,5 @@
 .page-header {
-  box-shadow: 0 1px 0 #ececec, inset 0 1px 0 #ececec;
+
   @media (min-width: 770px) {
     box-shadow: none;
   }
@@ -21,7 +21,8 @@
 
 .page-header__logo {
   margin: 0 auto;
-  padding-top: 22px;
+  padding-top: 23px;
+  margin-bottom: 1px;
   @media (min-width: 770px) {
     margin: 0;
     width: 371px;
@@ -45,12 +46,12 @@
 
 .page-header__menu {
   margin-top: 17px;
-  display: none;
   @media (min-width: 770px) {
-    display: block;
+    .flex();
     width: 100%;
     margin-top: 10px;
     position: relative;
+    flex-wrap: nowrap;
     &::before {
       content: "Бесплатная доставка по России";
       position: absolute;
@@ -70,6 +71,16 @@
     .flex();
     flex-direction: column;
     margin-top: -84px;
+  }
+}
+
+.page-header__menu li {
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }
 
@@ -94,9 +105,13 @@
   width: 20px;
   height: 14px;
   margin-top: 11px;
-  background-image: url("@{path}img/menu.png");
+  background-image: url("@{path}img/menu.svg");
   border: none;
   cursor: pointer;
+  background-color: transparent;
+  @media (min-width: 770px) {
+    display: none;
+  }
 }
 
 .page-header__image {
@@ -110,6 +125,14 @@
     top: 61px;
     width: 149px;
     height: 72px;
+  }
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }
 

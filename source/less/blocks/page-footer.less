@@ -1,5 +1,5 @@
 .page-footer {
-  margin-top: 39px;
+  margin-top: 40px;
   background-color: @grey;
 }
 
@@ -29,14 +29,44 @@
   justify-content: space-between;
   width: 141px;
   margin-left: -5px;
+  align-items: center;
+}
+
+.page-footer__icon {
+  color: #000000;
+
+  &:hover {
+    color: #46c1ae;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.page-footer__html-mini-logo {
+  color: #79d6c3;
+  margin-right: 39px;
+  margin-top: 4px;
+
+  &:hover {
+    color: #46c1ae;
+  }
+}
+
+.page-footer__made {
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .page-footer__made {
   .flex;
+  flex-direction: row-reverse;
   position: relative;
   width: 100%;
   justify-content: space-between;
-  padding-top: 50px;
+  padding-top: 42px;
 
   &::before {
     content: "";
@@ -62,6 +92,7 @@
   font-weight: 700;
   line-height: 18px;
   .m0p0;
+  margin-left: 38px;
   padding-top: 10px;
   @media (min-width: 770px) {
     .m0p0;
@@ -75,6 +106,7 @@
   align-items: center;
   padding-top: 30px;
   padding-bottom: 30px;
+  margin-top: -4px;
   @media (min-width: 769px) {
     padding-top: 60px;
     padding-bottom: 60px;
@@ -84,14 +116,23 @@
   }
 }
 
-.page-footer__logo {
-}
-
 .page-footer__logo picture {
   @media (max-width: 769px) {
     display: none;
   }
 }
 
-.page-footer__link {
+.page-footer__logo-pic {
+  display: none;
+  @media (min-width: 770px) {
+    display: block;
+
+    &:hover {
+      color: #46c1ae;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
 }

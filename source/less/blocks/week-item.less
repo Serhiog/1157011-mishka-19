@@ -14,7 +14,6 @@
   font-size: 25px;
   font-weight: 700;
   line-height: 30px;
-  width: 100%;
   padding: 0;
   margin: 0;
   position: relative;
@@ -28,22 +27,47 @@
   @media (min-width: 1154px) {
     font-size: 53px;
     margin-left: 178px;
+    z-index: 1;
   }
 }
 
 .week-item__common {
   .flex();
   flex-direction: column;
+  position: relative;
+
+  &::after {
+    content: "";
+    background-image: url("@{path}img/zigzag-line-desktop.svg");;
+    position: absolute;
+    right: -28px;
+    width: 319px;
+    height: 6px;
+    bottom: -40px;
+    background-repeat: no-repeat;
+  }
+
   @media (min-width: 770px) {
     .flex();
     flex-direction: column;
     height: 500px;
     margin-top: 30px;
     align-items: center;
+    &::after {
+      bottom: 0;
+      right: -45px;
+      background-repeat: repeat-x;
+      width: 772px;
+    }
   }
   @media (min-width: 1154px) {
     justify-content: flex-end;
     align-items: flex-end;
+    &::after {
+      bottom: -37px;
+      right: -2px;
+      width: 1050px;
+    }
   }
 }
 
@@ -67,7 +91,7 @@
       }
       @media (min-width: 1154px) {
         text-align: center;
-        right: 1100px;
+        left: -128px;
       }
     }
   }
@@ -152,18 +176,6 @@
   margin: 0 auto;
   margin-top: 11px;
   position: relative;
-
-  &::after {
-    content: url("@{path}img/zigzag-line-desktop.png");
-    position: absolute;
-    top: 76px;
-    left: -31px;
-    @media (min-width: 770px) {
-      content: url("@{path}img/big-zigzag-line-desktop.png");
-      left: -63px;
-      top: 100px;
-    }
-  }
 }
 
 .week-item__price {

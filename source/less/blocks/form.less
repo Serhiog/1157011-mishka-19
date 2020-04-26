@@ -166,36 +166,62 @@
     padding-left: 30px;
   }
 
-  &--1::before {
-    content: "";
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    border: 2px solid #444444;
-    position: absolute;
-    left: -62px;
-    top: 8px;
-    @media (min-width: 770px) {
-      width: 52px;
-      height: 52px;
+  &--1 {
+    &::before {
+      content: "";
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      border: 2px solid #444444;
+      position: absolute;
+      left: -62px;
+      top: 8px;
+
+      @media (min-width: 770px) {
+        width: 52px;
+        height: 52px;
+      }
+    }
+
+    &:hover::before {
+      border: 2px solid #62d1ba;
+    }
+
+    &:active::before {
+      background-color: #ffffff;
+      border: 2px solid #444444;
+      opacity: 0.3;
     }
   }
 
-  &--2::before {
-    content: "";
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    border: 2px solid #444444;
-    position: absolute;
-    left: -63px;
-    top: 7px;
-    @media (min-width: 770px) {
-      width: 52px;
-      height: 52px;
+  &--2 {
+    &::before {
+      content: "";
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      border: 2px solid #444444;
+      position: absolute;
+      left: -63px;
+      top: 7px;
+      @media (min-width: 770px) {
+        width: 52px;
+        height: 52px;
+      }
+    }
+
+    &:hover::before {
+      border: 2px solid #62d1ba;
+    }
+
+    &:active::before {
+      background-color: #ffffff;
+      border: 2px solid #444444;
+      opacity: 0.3;
     }
   }
 }
+
 
 .form-color__name {
   font-family: @font700;
@@ -206,6 +232,16 @@
   margin-bottom: 33px;
   padding-top: 15px;
   position: relative;
+
+  &:hover::before {
+    border: 2px solid #62d1ba;
+  }
+
+  &:active::before {
+    border: 2px solid #444444;
+    opacity: 0.3;
+  }
+
   @media (min-width: 770px) {
     font-size: 19px;
   }
@@ -331,26 +367,54 @@
 }
 
 
-.form-fullname__select::-webkit-input-placeholder, .form-tel__select::-webkit-input-placeholder, .form-email__select, .form-extra__select {
-  color: #C9C9C9;
-  font-family: @font400;
-  font-size: 17px;
-  font-weight: 400;
-  line-height: 18px;
-  padding-bottom: 17px;
-  @media (min-width: 770px) {
-    font-size: 19px;
+.form-fullname__select, .form-tel__select, .form-email__select, .form-extra__select {
+
+  &::-webkit-input-placeholder {
+    opacity: 0.3;
+    color: #444444;
+    font-family: @font400;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 18px;
+    padding-bottom: 17px;
+    outline: none;
+    @media (min-width: 770px) {
+      font-size: 19px;
+    }
   }
 }
 
-.form-fullname__select, .form-tel__select, .form-email__select, {
+.form-fullname__select, .form-tel__select, .form-email__select {
   border: none;
   border-bottom: 2px solid black;
   width: 100%;
   padding-bottom: 13px;
   margin-bottom: 5px;
+  outline: none;
+  color: #000;
+  font-family: @font400;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 18px;
+
+  &:hover {
+    border-bottom: 2px solid #67d2bc;
+  }
+
   @media (min-width: 770px) {
     padding-bottom: 5px;
+  }
+}
+
+.form-tel .form-group {
+  &:hover svg {
+    color: #62d1ba;
+  }
+}
+
+.form-email .form-group {
+  &:hover svg {
+    color: #62d1ba;
   }
 }
 
@@ -492,6 +556,10 @@
   min-height: 142px;
   margin-bottom: -9px;
   border: 2px solid black;
+  resize: none;
+  &:hover {
+    border: 2px solid #62d1ba;
+  }
   @media (min-width: 770px) {
   }
   @media (min-width: 1154px) {
@@ -567,41 +635,5 @@
     .flex();
     flex-direction: column;
     width: 700px;
-  }
-}
-
-.form-tel .title-form::before {
-  content: url("@{path}img/icon-phone.svg");
-  position: absolute;
-  opacity: 0.2;
-  top: 36px;
-  left: 224px;
-  @media (min-width: 770px) {
-    content: url("@{path}img/icon-phone.svg");
-    position: absolute;
-    opacity: 0.2;
-    top: -22px;
-    left: 630px;
-  }
-  @media (min-width: 1154px) {
-    left: 816px;
-  }
-}
-
-.form-email .title-form::before {
-  content: url("@{path}img/icon-mail.svg");
-  position: absolute;
-  opacity: 0.2;
-  top: 36px;
-  left: 224px;
-  @media (min-width: 770px) {
-    content: url("@{path}img/icon-mail.svg");
-    position: absolute;
-    opacity: 0.2;
-    top: -22px;
-    left: 625px;
-  }
-  @media (min-width: 1154px) {
-    left: 816px;
   }
 }

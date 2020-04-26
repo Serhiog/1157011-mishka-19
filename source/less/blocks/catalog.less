@@ -24,10 +24,14 @@
     padding-bottom: 100px;
     padding-top: 98px;
     &::after {
-      content: url("@{path}img/zigzag-fill-desktop-big.png");
+      content: "";
+      background-image: url("@{path}img/zigzag-fill-desktop-big.png");
       position: absolute;
-      top: 210px;
-      left: -47px;
+      top: 206px;
+      left: -37px;
+      width: 770px;
+      height: 24px;
+      background-repeat: repeat-x;
     }
   }
   @media (min-width: 1154px) {
@@ -56,6 +60,7 @@
 }
 
 .catalog__item {
+
   margin-bottom: 30px;
   @media (min-width: 770px) {
     .flex();
@@ -67,6 +72,13 @@
 }
 
 .catalog__discription {
+  &:hover {
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+  }
+  &:active {
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+  }
+
   border: 1px solid #ececec;
   padding-bottom: 27px;
   margin-top: -3px;
@@ -126,6 +138,7 @@
   justify-content: space-between;
   margin-top: 41px;
   position: relative;
+
   &::before {
     content: "";
     width: 202px;
@@ -135,6 +148,7 @@
     top: -12px;
     left: 24px;
   }
+
   @media (min-width: 770px) {
     margin-top: auto;
     &::before {
@@ -173,10 +187,13 @@
 
 .catalog__add-cart {
   font-size: 0;
+  color: #D9D8D8;
 
-  &::after {
-    content: url("@{path}img/icon-cart.svg");
-    opacity: 0.2;
-    padding-right: 27px;
+  &:hover {
+    color: #63d1bb;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }

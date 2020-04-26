@@ -1,5 +1,5 @@
 .contacts {
-  margin-top: 150px;
+  margin-top: 88px;
   position: relative;
 }
 
@@ -47,7 +47,7 @@
 .contacts__list {
   .m0p0;
   border-collapse: collapse;
-  margin-top: 26px;
+  margin-top: -2px;
   display: block;
   margin-bottom: 50px;
   @media (min-width: 770px) {
@@ -71,6 +71,7 @@
 
 .contacts__view {
   .flex;
+  margin-top: 29px;
 }
 
 .contacts__view + .contacts__view {
@@ -107,6 +108,7 @@
   margin-right: -10px;
   display: block;
   position: relative;
+  padding-left: 9px;
   @media (min-width: 770px) {
     font-size: 17px;
     width: 207px;
@@ -120,14 +122,30 @@
   }
 }
 
-.contacts__value--mod::after {
-  content: "";
-  width: 100%;
-  height: 1px;
-  background-color: #62D1BA;
-  position: absolute;
-  top: 31px;
-  left: 1px;
+.contacts__value--mod {
+
+  &:hover {
+    color: #46c1ae;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &::after {
+    content: "";
+    width: 177px;
+    height: 1px;
+    background-color: #62D1BA;
+    position: absolute;
+    top: 29px;
+    left: 10px;
+  }
+}
+
+.contacts__value--mod-link {
+  text-decoration: none;
+  color: inherit;
 }
 
 .contacts__view:last-child {
@@ -139,12 +157,24 @@
 
 .contacts__map {
   margin: 0 auto;
+  margin-top: -12px;
+  position: relative;
   @media (min-width: 770px) {
     margin-top: 50px;
   }
   @media (min-width: 1154px) {
     margin: 0;
     order: 2;
+  }
+
+  &::before {
+    content: "";
+    background-image: url("@{path}img/icon-map-pin.svg");
+    width: 67px;
+    height: 100px;
+    position: absolute;
+    top: 144px;
+    left: 108px;
   }
 }
 
