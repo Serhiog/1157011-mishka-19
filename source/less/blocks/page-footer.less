@@ -5,10 +5,10 @@
 
 .page-footer--index {
   @media (min-width: 770px) {
-    margin-top: 383px;
+    margin-top: 348px;
   }
   @media (min-width: 1154px) {
-    margin-top: 39px;
+    margin-top: -33px;
   }
 }
 
@@ -19,6 +19,8 @@
   @media (min-width: 770px) {
     flex-grow: 1;
     width: auto;
+    margin-left: 91px;
+    padding-top: 8px;
   }
 }
 
@@ -48,6 +50,9 @@
   color: #79d6c3;
   margin-right: 39px;
   margin-top: 4px;
+  @media (min-width: 770px) {
+    margin-right: 0;
+  }
 
   &:hover {
     color: #46c1ae;
@@ -78,11 +83,17 @@
   }
 
   @media (min-width: 770px) {
-    width: 185px;
+    width: 194px;
     .m0p0;
     &::before {
       content: none;
     }
+  }
+}
+
+.page-footer__link {
+  @media (min-width: 770px) {
+    padding-top: 7px;
   }
 }
 
@@ -96,6 +107,8 @@
   padding-top: 10px;
   @media (min-width: 770px) {
     .m0p0;
+    padding-top: 15px;
+    padding-left: 10px;
   }
 }
 
@@ -104,16 +117,20 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  padding-top: 30px;
+  padding-top: 26px;
   padding-bottom: 30px;
-  margin-top: -4px;
-  @media (min-width: 769px) {
-    padding-top: 60px;
+  margin-top: -1px;
+  @media (min-width: 770px) {
     padding-bottom: 60px;
     justify-content: space-between;
     display: flex;
-    align-items: center;
+    margin-top: -4px;
+    padding-top: 48px;
   }
+}
+
+.page-footer__logo {
+  padding-bottom: 6px;
 }
 
 .page-footer__logo picture {
@@ -134,5 +151,11 @@
     &:active {
       opacity: 0.3;
     }
+  }
+}
+
+.page-footer__item--facebook {
+  @media (min-width: 770px) {
+    padding-bottom: 5px;
   }
 }

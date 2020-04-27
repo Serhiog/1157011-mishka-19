@@ -1,6 +1,14 @@
 .contacts {
   margin-top: 88px;
   position: relative;
+
+  @media (min-width: 770px) {
+    margin-top: 71px;
+  }
+  @media (min-width: 1154px) {
+    margin-top: 192px;
+    margin-left: 142px;
+  }
 }
 
 .contacts .container {
@@ -30,16 +38,17 @@
     &::before {
       content: url("@{path}img/icon-flag.svg");
       position: absolute;
-      top: -26px;
-      left: 650px;
+      top: -25px;
+      left: 619px;
     }
   }
   @media (min-width: 1154px) {
     font-size: 53px;
     order: -1;
-    margin-right: 107px;
+    margin-right: 73px;
     &::before {
-      left: -83px;
+      left: -107px;
+      top: -22px;
     }
   }
 }
@@ -52,13 +61,21 @@
   margin-bottom: 50px;
   @media (min-width: 770px) {
     display: block;
+    margin-left: 5px;
+    margin-top: 29px;
   }
   @media (min-width: 1154px) {
     width: 370px;
     margin: 0;
     order: 0;
-    margin-top: 80px;
+    margin-top: 34px;
   }
+}
+
+.contacts__list tbody {
+  @media (min-width: 1154px) {
+  margin-left: 35px;
+}
 }
 
 .contacts__list tbody {
@@ -77,7 +94,7 @@
 .contacts__view + .contacts__view {
   @media (min-width: 770px) {
     margin-top: 30px;
-    margin-left: 75px;
+    margin-left: 68px;
   }
   @media (min-width: 1154px) {
     margin-left: 0;
@@ -112,6 +129,7 @@
   @media (min-width: 770px) {
     font-size: 17px;
     width: 207px;
+    padding-left: 5px;
   }
 }
 
@@ -160,11 +178,12 @@
   margin-top: -12px;
   position: relative;
   @media (min-width: 770px) {
-    margin-top: 50px;
+    margin-top: 6px;
   }
   @media (min-width: 1154px) {
-    margin: 0;
     order: 2;
+    margin-top: -83px;
+    margin-left: 55px;
   }
 
   &::before {
@@ -175,6 +194,14 @@
     position: absolute;
     top: 144px;
     left: 108px;
+    @media (min-width: 770px) {
+      top: 139px;
+      left: 315px;
+    }
+    @media (min-width: 1154px) {
+      top: 146px;
+      left: 195px;
+    }
   }
 }
 
@@ -191,7 +218,7 @@
   @media (min-width: 1154px) {
     width: 525px;
     height: 457px;
-    margin-left: -52px;
+    margin-left: -45px;
   }
 }
 
@@ -203,12 +230,13 @@
     margin: 0 auto;
     display: block;
     margin-top: 50px;
+    width: 230px;
   }
   @media (min-width: 1154px) {
     margin: 0;
     order: 1;
-    margin-right: 148px;
-    margin-top: 70px;
+    margin-right: 107px;
+    margin-top: 79px;
     width: 230px;
   }
 }

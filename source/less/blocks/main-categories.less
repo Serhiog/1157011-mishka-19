@@ -5,7 +5,7 @@
   background-position-y: -17px;
   background-position-x: -157px;
   min-height: 488px;
-  margin-top: 28px;
+  margin-top: 29px;
 
   .flex();
   @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
@@ -20,13 +20,14 @@
   @media (min-width: 770px) {
     background-image: url("@{path}img/hero-tablet@1x.jpg");
     background-position-y: 0;
+    background-position-x: -240px;
     position: relative;
     border-top: 1px solid #ECECEC;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     min-height: 746px;
-    margin-top: -43px;
+    margin-top: -45px;
     @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
       background-image: url("@{path}img/hero-tablet@2x.jpg");
       background-size: 1150px;
@@ -35,8 +36,9 @@
   }
 
   @media (min-width: 1154px) {
-    margin-top: -67px;
+    margin-top: -42px;
     background-image: url("@{path}img/hero-desktop@1x.jpg");
+    background-position-x: -50px;
     @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
       background-image: url("@{path}img/hero-desktop@2x.jpg");
       background-size: 1150px;
@@ -64,6 +66,8 @@
     font-weight: 700;
     line-height: 50px;
     width: 508px;
+    margin-top: 83px;
+    margin-left: 79px;
     br {
       display: none
     }
@@ -73,6 +77,10 @@
   @media (min-width: 1154px) {
     font-size: 53px;
     width: 630px;
+    margin-left: 0;
+    margin: 0 auto;
+    margin-top: 83px;
+    line-height: 57px;
   }
 }
 
@@ -90,14 +98,14 @@
     margin-top: auto;
     flex-direction: row;
     position: relative;
-    width: auto;
+    width: 100%;
     margin-left: 0;
     &::after {
       content: "";
       background-image: url("@{path}img/bg-zigzag-fill.svg");
       position: absolute;
-      top: 95px;
-      left: -66px;
+      top: 108px;
+      left: -49px;
       height: 24px;
       width: 770px;
 
@@ -106,8 +114,10 @@
   @media (min-width: 1154px) {
     padding: 0;
     &::after {
+      background-image: url("@{path}img/bg-zigzag-fill-desktop.svg");
       width: 1250px;
-      left: -86px;
+      left: -100px;
+      top: 102px;
     }
   }
 }
@@ -143,6 +153,13 @@
   padding-top: 25px;
   position: relative;
   padding-left: 29px;
+
+  @media (min-width: 770px) {
+    padding-top: 30px;
+    position: relative;
+    padding-left: 37px;
+    line-height: 29px;
+  }
 
   &:active {
     opacity: 0.3;
@@ -194,9 +211,25 @@
 .main-categories__link--interior-icon {
   left: 244px;
   top: 24px;
+  @media (min-width: 770px) {
+    left: 258px;
+    top: 31px;
+  }
+  @media (min-width: 1154px) {
+    left: 449px;
+    top: 30px;
+  }
 }
 
 .main-categories__link--toy-icon {
   left: 234px;
   top: 21px;
+  @media (min-width: 770px) {
+    left: 239px;
+    top: 33px;
+  }
+  @media (min-width: 1154px) {
+    left: 430px;
+    top: 31px;
+  }
 }

@@ -1,10 +1,10 @@
 .week-item {
   margin-top: -7px;
   @media (min-width: 770px) {
-    margin-top: 20px;
+    margin-top: 12px;
   }
   @media (min-width: 1154px) {
-    margin-top: 97px;
+    margin-top: 131px;
   }
 }
 
@@ -26,8 +26,17 @@
   }
   @media (min-width: 1154px) {
     font-size: 53px;
-    margin-left: 178px;
+    margin-left: 171px;
+    margin-top: -4px;
     z-index: 1;
+    padding-top: 0;
+  }
+}
+
+.week-item__wrapper {
+  @media (min-width: 1154px) {
+    .flex();
+    flex-direction: column;;
   }
 }
 
@@ -38,7 +47,7 @@
 
   &::after {
     content: "";
-    background-image: url("@{path}img/zigzag-line-desktop.svg");;
+    background-image: url("@{path}img/zigzag-line-tablet.svg");
     position: absolute;
     right: -28px;
     width: 319px;
@@ -52,21 +61,25 @@
     flex-direction: column;
     height: 500px;
     margin-top: 30px;
-    align-items: center;
     &::after {
+      background-image: url("@{path}img/zigzag-line-desktop.svg");
       bottom: 0;
-      right: -45px;
+      right: -52px;
       background-repeat: repeat-x;
       width: 772px;
+      height: 17px;
     }
   }
   @media (min-width: 1154px) {
-    justify-content: flex-end;
-    align-items: flex-end;
+    margin-top: 0;
+    margin-top: 33px;
+    margin-left: 175px;
     &::after {
-      bottom: -37px;
+      background-image: url("@{path}img/zigzag-line-desktop-big.svg");
+      bottom: -93px;
       right: -2px;
       width: 1050px;
+      height: 23px;
     }
   }
 }
@@ -85,13 +98,16 @@
       display: block;
       top: 67px;
       @media (min-width: 770px) {
-        right: 10px;
-        top: 45px;
+        right: 30px;
+        top: 44px;
         width: 70px;
+        text-align: center;
+        line-height: 17px;
       }
       @media (min-width: 1154px) {
         text-align: center;
-        left: -128px;
+        left: -124px;
+        top: 11px;
       }
     }
   }
@@ -109,7 +125,8 @@
   @media (min-width: 770px) {
     width: 282px;
     font-size: 17px;
-    margin-top: 30px;
+    margin-top: 19px;
+    line-height: 30px;
   }
 }
 
@@ -118,6 +135,10 @@
     order: 0;
   }
 
+  .week-item__main-info {
+    margin-left: 147px;
+    margin-bottom: 36px;
+  }
 }
 
 .week-item__list {
@@ -127,7 +148,11 @@
   margin-left: -2px;
   margin-top: 19px;
   @media (min-width: 770px) {
-    margin-top: 45px;
+    margin-top: 36px;
+    margin-left: 0;
+  }
+  @media (min-width: 1154px) {
+    margin-top: 48px;
   }
 }
 
@@ -152,12 +177,20 @@
   padding-left: 23px;
   padding-bottom: 11px;
   padding-top: 10px;
+  @media (min-width: 770px) {
+    padding-left: 23px;
+  }
+  @media (min-width: 1154px) {
+    padding-left: 21px;
+  }
 }
 
 .week-item__picture {
   margin-top: 28px;
   @media (min-width: 770px) {
     order: 2;
+    margin-top: 27px;
+    margin-left: 42px;
   }
 }
 
@@ -166,27 +199,37 @@
   font-family: @font700;
   font-size: 17px;
   margin-top: 23px;
+  @media (min-width: 770px) {
+    font-size: 20px;
+    line-height: 24px;
+  }
 
   @media (min-width: 1154px) {
     font-size: 20px;
+    padding-left: 4px;
   }
 }
 
-.week-item-button {
+.week-item__add .week-item-button {
   margin: 0 auto;
   margin-top: 11px;
   position: relative;
+  @media (min-width: 770px) {
+    width: 292px;
+    padding-left: 0;
+    margin-left: -1px;
+  }
 }
 
 .week-item__price {
   @media (min-width: 770px) {
-
+    margin-left: -6px;
   }
 }
 
 .week-item__add {
   @media (min-width: 770px) {
-
+    margin-top: 3px;
   }
 }
 
@@ -194,10 +237,13 @@
   order: 2;
   @media (min-width: 770px) {
     order: 1;
-    margin-top: 39px;
+    margin-top: 33px;
     .flex();
     flex-direction: column;
     align-items: center;
+  }
+  @media (min-width: 1154px) {
+    margin-top: 87px;
   }
 }
 
@@ -211,6 +257,7 @@
   @media (min-width: 1154px) {
     width: 525px;
     height: 636px;
-
+    margin-top: -166px;
+    margin-left: 16px;
   }
 }
