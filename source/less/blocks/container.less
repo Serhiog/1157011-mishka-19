@@ -24,9 +24,13 @@
 
 .container__extra-info {
   @media (min-width: 770px) {
+    margin-top: -24px;
     .flex();
     flex-wrap: wrap;
     justify-content: space-between;
+  }
+  @media (min-width: 1154px) {
+    margin-top: -28px;
   }
 }
 
@@ -35,17 +39,22 @@
     .flex();
     flex-direction: column;
     padding-top: 40px;
-    padding-bottom: 40px;
+    padding-bottom: 0;
   }
   @media (min-width: 1154px) {
-    width: 861px;
+    width: 875px;
+    padding-bottom: 3px;
   }
 }
 
 .container__grey {
   @media (min-width: 770px) {
     background-color: #F1F1F1;
-    margin-top: 50px;
+    margin-top: 26px;
+    padding-bottom: 28px;
+  }
+  @media (min-width: 1154px) {
+    padding-bottom: 25px;
   }
 }
 
