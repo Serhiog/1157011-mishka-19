@@ -1,6 +1,6 @@
 .advert-video {
   @media (min-width: 1154px) {
-    margin-top: 7px;
+    margin-top: -17px;
   }
 }
 
@@ -43,7 +43,10 @@
   right: 50%;
   width: 101px;
   height: 77px;
-  transform: translate(-50%, 200%);
+  transform: translate(-50%, 61px);
+  @media (min-width: 770px) {
+    transform: translate(-50%, 188px);
+  }
 
   &:hover {
     width: 121px;
@@ -141,7 +144,7 @@
     margin-left: 0;
     align-self: center;
     padding-right: 10px;
-    margin-top: -18px;
+    margin-top: -17px;
   }
   @media (min-width: 1154px) {
     width: 230px;
@@ -157,9 +160,9 @@
   font-weight: 700;
   line-height: 24px;
   width: 126px;
-  padding-left: 91px;
+  padding-left: 90px;
   position: relative;
-  padding-top: 23px;
+  padding-top: 24px;
   order: -1;
 
   @media (min-width: 770px) {
@@ -168,7 +171,7 @@
     font-size: 20px;
     padding-left: 0;
     padding-top: 33px;
-    margin-left: 105px;
+    margin-left: 106px;
   }
 
   @media (min-width: 1154px) {
@@ -186,17 +189,17 @@
 .advert-video__title-pic {
   position: absolute;
   left: 33px;
-  top: 35px;
+  top: 30px;
   width: 32px;
   height: 37px;
   color: #62d1ba;
   @media (min-width: 770px) {
-    left: -63px;
-    top: 33px;
+    left: 42px;
+    top: 28px;
   }
   @media (min-width: 1154px) {
-    left: 101px;
-    top: 53px;
+    left: 79px;
+    top: 41px;
   }
 
 }
@@ -220,6 +223,9 @@
 
 .advert-video__wrapper--play {
   position: relative;
+  @media (min-width: 770px) {
+    order: -1;
+  }
   @media (min-width: 1154px) {
     order: -1;
   }
