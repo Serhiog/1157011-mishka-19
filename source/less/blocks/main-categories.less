@@ -27,7 +27,7 @@
     flex-wrap: wrap;
     flex-direction: column;
     min-height: 746px;
-    margin-top: -45px;
+    margin-top: -117px;
     @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
       background-image: url("@{path}img/hero-tablet@2x.jpg");
       background-size: 1150px;
@@ -54,7 +54,7 @@
   line-height: 30px;
   width: 244px;
   text-align: center;
-  padding-top: 71px;
+  padding-top: 70px;
   margin: 0;
   margin-left: -22px;
   margin-bottom: auto;
@@ -66,13 +66,12 @@
     font-weight: 700;
     line-height: 50px;
     width: 508px;
-    margin-top: 83px;
-    margin-left: 79px;
+    margin-left: 80px;
     br {
       display: none
     }
 
-    margin-top: 85px;
+    margin-top: 82px;
   }
   @media (min-width: 1154px) {
     font-size: 53px;
@@ -104,10 +103,10 @@
       content: "";
       background-image: url("@{path}img/bg-zigzag-fill.svg");
       position: absolute;
-      top: 108px;
-      left: -49px;
       height: 24px;
       width: 770px;
+      bottom: -12px;
+      right: -51px;
 
     }
   }
@@ -116,8 +115,8 @@
     &::after {
       background-image: url("@{path}img/bg-zigzag-fill-desktop.svg");
       width: 1250px;
-      left: -100px;
-      top: 102px;
+      bottom: -7px;
+      right: -36px;
     }
   }
 }
@@ -125,7 +124,7 @@
 
 .main-categories__item {
   width: 100%;
-  height: 103px;
+  min-height: 103px;
   position: relative;
   @media (min-width: 770px) {
     width: auto;
@@ -148,7 +147,8 @@
   line-height: 24px;
   text-align: start;
   text-decoration: none;
-  width: 106px;
+  width: 100%;
+  height: 100%;
   display: block;
   padding-top: 25px;
   position: relative;
@@ -159,6 +159,10 @@
     position: relative;
     padding-left: 37px;
     line-height: 29px;
+    padding-bottom: 25px;
+  }
+  @media (min-width: 1154px) {
+
   }
 
   &:active {
@@ -177,26 +181,25 @@
 }
 
 .main-categories__item:hover {
-  margin-top: -5px;
-  margin-bottom: 5px;
-  transition: 0.5s;
-
-  & .main-categories__link {
-    padding-top: 20px;
-    transition: 0.5s;
+  @media (min-width: 770px) {
+    position: relative;
+    bottom: 5px;
+    transition: all 0.3s;
   }
 }
 
 .main-categories__item:nth-child(odd) {
   background-color: #63D1BB;
+  width: 50%;
 }
 
 .main-categories__item:nth-child(even) {
   background-color: #56C3B2;
+  width: 50%;
 }
 
 .main-categories__link--interior-icon, .main-categories__link--toy-icon {
-  color: #149080;
+  color: #3bb09d;
   position: absolute;
 
   &:hover {
@@ -231,5 +234,17 @@
   @media (min-width: 1154px) {
     left: 430px;
     top: 31px;
+  }
+}
+
+.main-categories__list .main-categories__item {
+  @media (max-width: 769px) {
+    width: 100%;
+  }
+}
+
+.menu__list .menu__item:first-child {
+  @media (max-width: 769px) {
+    padding-top: 26px;
   }
 }

@@ -27,6 +27,8 @@
     margin: 0;
     width: 371px;
     padding-top: 23px;
+    z-index: 7;
+    margin-left: -1px;
   }
   @media (min-width: 1154px) {
     margin: 0 auto;
@@ -48,24 +50,11 @@
   @media (min-width: 770px) {
     .flex();
     width: 100%;
-    margin-top: 5px;
     position: relative;
     flex-wrap: nowrap;
-    &::before {
-      content: "Бесплатная доставка по России";
-      position: absolute;
-      font-family: @font400;
-      font-size: 15px;
-      font-weight: 400;
-      line-height: 24px;
-      color: #444444;
-      right: 1px;
-      z-index: 1;
-      top: 28px;
-      @media (min-width: 1154px) {
-        top: 105px;
-      }
-    }
+    min-height: 200px;
+    align-items: center;
+    margin-top: -68px;
   }
   @media (min-width: 1154px) {
     .flex();
@@ -73,6 +62,8 @@
     flex-wrap: wrap;
     margin-top: -84px;
     justify-content: space-between;
+    min-height: auto;
+    align-items: stretch;
   }
 }
 
@@ -138,3 +129,21 @@
   }
 }
 
+.menu__list--extra {
+  display: none;
+  @media (min-width: 770px) {
+    display: inline-block;
+  }
+  list-style-type: none;
+}
+
+.menu__item--extra-info {
+  font-family: @font400;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #444444;
+  right: 1px;
+  z-index: 1;
+  margin-left: auto;
+}

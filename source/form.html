@@ -50,14 +50,19 @@
             <a class="menu__item-link" href="#">Корзина: пока пуста</a>
           </li>
         </ul>
-        <ul class="menu__list-extra">
-          <li class="menu__item">
-            <a class="menu__item-link" href="#">Новые поступления</a>
-          </li>
-          <li class="menu__item">
-            <a class="menu__item-link" href="#">Распродажа</a>
-          </li>
-        </ul>
+        <div class="menu__list-wrapper">
+          <ul class="menu__list-extra">
+            <li class="menu__item">
+              <a class="menu__item-link" href="#">Новые поступления</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__item-link" href="#">Распродажа</a>
+            </li>
+          </ul>
+          <ul class="menu__list--extra">
+            <li class="menu__item--extra-info">Бесплатная доставка по России</li>
+          </ul>
+        </div>
       </nav>
     </div>
   </div>
@@ -213,9 +218,11 @@
   <div class="container">
     <div class="page-footer__common">
       <div class="page-footer__logo">
-        <svg class="page-footer__logo-pic" width="102" height="34">
-          <use xlink:href="img/sprite/sprite.svg#logo-pic"></use>
-        </svg>
+        <a class="page-footer__link" href="https://htmlacademy.ru/intensive/adaptive">
+          <svg class="page-footer__logo-pic" width="102" height="34">
+            <use xlink:href="img/sprite/sprite.svg#logo-pic"></use>
+          </svg>
+        </a>
       </div>
       <div class="page-footer__content">
         <ul class="page-footer__list">
@@ -243,7 +250,7 @@
         </ul>
       </div>
       <div class="page-footer__made">
-        <a class="page-footer__link" href="http://htmlacademy.ru/">
+        <a class="page-footer__link" href="https://htmlacademy.ru/intensive/adaptive">
           <svg class="page-footer__html-mini-logo" width="27" height="34">
             <use xlink:href="img/sprite/sprite.svg#html-mini-logo">
             </use>
