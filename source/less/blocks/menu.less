@@ -98,7 +98,7 @@
 
 .menu__list--sub .menu__item {
   @media (min-width: 770px) {
-    z-index: 2;
+    z-index: 10;
   }
 }
 
@@ -205,12 +205,12 @@
   }
 }
 
-.menu__item--search .menu__item-link {
+.menu__item--search {
   @media (min-width: 1154px) {
     &::before {
       content: "";
       width: 1px;
-      height: 95px;
+      height: 92px;
       background-color: #ECECEC;
       position: absolute;
       top: 6px;
@@ -220,17 +220,13 @@
     &::after {
       content: "";
       width: 1px;
-      height: 95px;
+      height: 92px;
       background-color: #ECECEC;
       position: absolute;
-      top: 4px;
+      top: 6px;
       left: 92px;
     }
   }
-}
-
-.page-header__menu li:hover .menu__item-link::before {
-  opacity: 1;
 }
 
 .menu__list--sub .menu__item--cart {

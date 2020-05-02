@@ -185,15 +185,35 @@
   margin-top: -12px;
   position: relative;
   order: 1;
+  width: 322px;
+  height: 457px;
+  margin-left: -30px;
+  & iframe {
+    width: 322px;
+    height: 457px;
+  }
   @media (min-width: 770px) {
     .m0p0;
     margin-top: 6px;
     order: 2;
+    width: 768px;
+    height: 457px;
+    margin-left: -50px;
+    & iframe {
+      width: 768px;
+      height: 457px;
+    }
   }
   @media (min-width: 1154px) {
     order: 2;
     margin-top: -457px;
     margin-left: 399px;
+    width: 525px;
+    height: 457px;
+    & iframe {
+      width: 525px;
+      height: 457px;
+    }
   }
 
   &::before {
@@ -235,14 +255,14 @@
 }
 
 .contacts__button {
-  margin-top: 34px;
+  margin-top: 38px;
   order: 2;
   padding-right: 17px;
 
   @media (min-width: 770px) {
     margin-left: 220px;
     display: block;
-    margin-top: 50px;
+    margin-top: 55px;
     width: 230px;
     order: 3;
     padding-left: 8px;
