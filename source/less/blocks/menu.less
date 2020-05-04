@@ -65,8 +65,11 @@
 }
 
 .menu__list .menu__item:last-child {
-  margin-top: 25px;
+  margin-top: 27px;
   margin-bottom: 2px;
+  @media (min-width: 770px) {
+    margin-top: 25px;
+  }
 }
 
 .menu__item {
@@ -105,10 +108,10 @@
 .menu__item:nth-child(2) {
   @media (min-width: 770px) {
     z-index: 2;
-    padding-right: 15px;
   }
   @media (min-width: 1154px) {
     margin-left: -26px;
+    padding-right: 15px;
   }
 }
 
@@ -265,6 +268,8 @@
   line-height: 24px;
   color: #000000;
   padding-left: 5px;
+  letter-spacing: 0.8px;
+  word-spacing: -1.4px;
 
   @media (min-width: 770px) {
     font-family: @font700;
