@@ -28,25 +28,24 @@ gulp.task("css", function () {
     .pipe(rename("style.min.css"))
     .pipe(sourcemap.write("."))
     .pipe(gulp.dest("build/css"))
-
     .pipe(server.stream());
 });
 
 gulp.task("server", function () {
   server.init({
-    server: "build/",
-    notify: false,
-    open: true,
-    cors: true,
-    ui: false
+    server: "build/"
   });
-
   gulp.watch("source/less/**/*.less", gulp.series("css"));
-  gulp.watch("source/*.html").on("change", server.reload);
+  gulp.watch("source/*.html", gulp.series("posthtml", "refresh"));
+});
+
+gulp.task("refresh", function (done) {
+  server.reload();
+  done();
 });
 
 gulp.task("images", function () {
-  return gulp.src("source/img/*.{png,jpg}")
+  return gulp.src("source/img/*.{png,jpg,svg}")
     .pipe(imagemin([
       imagemin.optipng({optimizationLevel: 5}),
       imagemin.mozjpeg({progressive: true}),
@@ -96,5 +95,5 @@ gulp.task("clean", function () {
   return del("build");
 })
 
-gulp.task("build", gulp.series("clear", "copy", "css", "images", "webp", "posthtml"));
+gulp.task("build", gulp.series("clean", "copy", "css", "images", "webp", "posthtml", "css"));
 gulp.task("start", gulp.series("build", "server"));
