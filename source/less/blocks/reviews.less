@@ -89,11 +89,12 @@
   .m0p0;
   margin-left: -2px;
   letter-spacing: 1.1px;
-}
+
   @media (min-width: 770px) {
-    font-size: 43px;
     margin-left: -5px;
     margin-top: 1px;
+    font-size: 43px;
+    letter-spacing: 1.5px;
   }
   @media (min-width: 1154px) {
     font-size: 53px;
@@ -101,7 +102,7 @@
     margin-top: -2px;
     max-width: 650px;
   }
-
+}
 
 .reviews__list {
   list-style-type: none;
@@ -126,11 +127,15 @@
   @media (min-width: 770px) {
     font-size: 17px;
     margin-top: 0;
-    width: 645px;
-    letter-spacing: -0.02px;
+    width: 672px;
+    letter-spacing: 0;
+    word-spacing: 4px;
+    padding-top: 2px;
   }
   @media (min-width: 1154px) {
-    width: 770px;
+    width: 810px;
+    margin-left: -2px;
+    margin-top: -1px;
     & br {
       display: inline;
     }
@@ -150,12 +155,13 @@
   letter-spacing: 0.9px;
   word-spacing: -5px;
   @media (min-width: 770px) {
-    margin-top: 2px;
+    margin-top: 0;
     margin-left: -1px;
-    letter-spacing: 0.8px;
+    letter-spacing: 1.6px;
   }
   @media (min-width: 1154px) {
     margin-left: 174px;
+    letter-spacing: 0.9px;
   }
 }
 
@@ -214,6 +220,10 @@
     top: 12px;
     width: 50px;
     height: 26px;
+    @media (min-width: 770px) {
+      left: 34px;
+      top: 11px;
+    }
   }
 }
 
@@ -249,7 +259,7 @@
     height: 26px;
     @media (min-width: 770px) {
       right: 48px;
-      top: 15px;
+      top: 11px;
     }
   }
 }
@@ -273,9 +283,15 @@
   @media (min-width: 770px) {
     margin-top: 0;
     width: 175px;
-    padding-right: 0;
-    letter-spacing: 0.5px;
-    padding-bottom: 4px;
+    padding-right: 10px;
+    letter-spacing: .5px;
+    padding-bottom: 1px;
+
+  }
+  @media (min-width: 1154px) {
+    padding-top: 6px;
+    padding-left: 13px;
+    letter-spacing: 0px;
   }
 }
 
@@ -287,7 +303,7 @@
     justify-content: flex-end;
     width: 100%;
     margin-left: -2px;
-    margin-top: -5px;
+    margin-top: -7px;
   }
 
   &::after {

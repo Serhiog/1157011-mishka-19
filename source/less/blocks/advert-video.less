@@ -6,10 +6,12 @@
 
 
 .advert-video__wrapper {
+  margin-top: -1px;
   border: 1px solid #ececec;
   margin-bottom: 60px;
   .flex();
   flex-direction: column;
+  padding-bottom: 2px;
   @media (min-width: 770px) {
     .flex();
     flex-direction: row;
@@ -21,7 +23,7 @@
 }
 
 .advert-video__play {
-  margin-top: 25px;
+  margin-top: 23px;
   position: relative;
   width: 260px;
   height: 150px;
@@ -108,10 +110,13 @@
   font-size: 13px;
   font-weight: 400;
   line-height: 24px;
-  width: 217px;
+  width: 220px;
   padding-left: 34px;
   margin-top: 23px;
   padding-bottom: 26px;
+  letter-spacing: 0.3px;
+  padding-top: 1px;
+  margin-left: -1px;
   @media (min-width: 770px) {
     order: 2;
     font-size: 15px;
@@ -121,6 +126,8 @@
     margin-top: 39px;
     line-height: 30px;
     margin-left: -14px;
+    letter-spacing: 0.4px;
+    padding-top: 1px;
   }
   @media (min-width: 1154px) {
     width: 270px;
@@ -128,6 +135,7 @@
     margin-bottom: 35px;
     padding-left: 0;
     margin-left: -1px;
+    letter-spacing: 0.6px;
   }
 }
 
@@ -135,16 +143,19 @@
   width: 192px;
   margin-left: 34px;
   margin-top: -14px;
-  padding-right: 18px;
+  padding-right: 9px;
   margin-bottom: 29px;
+  letter-spacing: 0px;
+  word-spacing: -2px;
   @media (min-width: 770px) {
     order: 3;
     width: 584px;
     margin-bottom: 44px;
     margin-left: 0;
     align-self: center;
-    padding-right: 10px;
+    padding-right: 1px;
     margin-top: -17px;
+    padding-top: 2px;
   }
   @media (min-width: 1154px) {
     width: 230px;
@@ -164,21 +175,26 @@
   position: relative;
   padding-top: 24px;
   order: -1;
+  padding-left: 89px;
+  padding-top: 25px;
+  letter-spacing: 1px;
 
   @media (min-width: 770px) {
     width: 100%;
     order: -1;
     font-size: 20px;
     padding-left: 0;
-    padding-top: 33px;
+    padding-top: 35px;
     margin-left: 106px;
+    letter-spacing: 0.7px;
   }
 
   @media (min-width: 1154px) {
     width: 148px;
     height: 70px;
     margin-left: 77px;
-    margin-top: 63px;
+    margin-top: 59px;
+    letter-spacing: 1px;
   }
 }
 
@@ -195,7 +211,7 @@
   color: #62d1ba;
   @media (min-width: 770px) {
     left: 42px;
-    top: 28px;
+    top: 30px;
   }
   @media (min-width: 1154px) {
     left: 79px;
@@ -218,6 +234,12 @@
   }
   @media (min-width: 1154px) {
     display: flex;
+  }
+}
+
+.advert-video__wrapper--play {
+  @media (min-width: 770px) {
+    margin-top: -2px;
   }
 }
 
