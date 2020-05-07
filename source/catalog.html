@@ -11,7 +11,6 @@
   <link rel="stylesheet" href="css/style.css">
   <link rel="preload" href="css/style.min.css" as="style">
   <link rel="preload" href="img/logo-desktop.svg" as="image">
-  <!--  <link rel="preload" href="/js/script.min.js" as="script">-->
   <link rel="preload" href="fonts/opensans.woff2" as="font">
 </head>
 
@@ -116,7 +115,7 @@
                   </p>
                   <div class="catalog__price">
                     <span class="catalog__amount">1 200 руб.</span>
-                    <button class="catalog__add-cart">Добавить в корзину
+                    <button type="button" class="catalog__add-cart">Добавить в корзину
                       <svg class="catalog__add-cart--icon" width="21" height="18">
                         <use xlink:href="img/sprite/sprite.svg#cart"></use>
                       </svg>
@@ -156,7 +155,7 @@
             <span class="catalog__amount">
               690 руб.
             </span>
-                    <button class="catalog__add-cart">Добавить в корзину
+                    <button type="button" class="catalog__add-cart">Добавить в корзину
                       <svg class="catalog__add-cart--icon" width="21" height="18">
                         <use xlink:href="img/sprite/sprite.svg#cart"></use>
                       </svg>
@@ -197,7 +196,7 @@
             <span class="catalog__amount">
               1 500 руб.
             </span>
-                    <button class="catalog__add-cart">Добавить в корзину
+                    <button type="button" class="catalog__add-cart">Добавить в корзину
                       <svg class="catalog__add-cart--icon" width="21" height="18">
                         <use xlink:href="img/sprite/sprite.svg#cart"></use>
                       </svg>
@@ -301,21 +300,23 @@
   </div>
 </footer>
 <div class="catalog-popup">
-  <div class="catalog-popup__container">
-    <h2 class="catalog-pop-up__title">Добавить
-      в корзину
-    </h2>
-    <p class="catalog-pop-up__about">Выберите размер:</p>
-    <ul class="catalog-pop-up__list">
-      <li class="catalog-pop-up__item">S</li>
-      <li class="catalog-pop-up__item">M</li>
-      <li class="catalog-pop-up__item">L</li>
-    </ul>
-    <button class="catalog-pop-up__add button">
-      Добавить
-    </button>
+  <div class="catalog-popup__wrapper">
+    <div class="catalog-popup__container">
+      <h2 class="catalog-pop-up__title">Добавить
+        в корзину</h2>
+      <p class="catalog-pop-up__about">Выберите размер:</p>
+      <ul class="catalog-pop-up__list">
+        <li class="catalog-pop-up__item catalog-pop-up__item--default">S</li>
+        <li class="catalog-pop-up__item">M</li>
+        <li class="catalog-pop-up__item">L</li>
+      </ul>
+      <button type="button" class="button catalog-pop-up__add">
+        Добавить
+      </button>
+    </div>
   </div>
 </div>
+<script src="js/script.min.js"></script>
 </body>
 
 </html>
