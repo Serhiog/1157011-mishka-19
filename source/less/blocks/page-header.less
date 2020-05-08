@@ -12,7 +12,6 @@
 .page-header__wrapper {
   margin-left: auto;
   .flex();
-  min-height: 79px;
   align-items: center;
   @media (min-width: 770px) {
     justify-content: space-between;
@@ -21,8 +20,10 @@
 
 .page-header__logo {
   margin: 0 auto;
-  padding-top: 22px;
-  margin-bottom: 1px;
+  padding-top: 0;
+  margin-bottom: 19px;
+  margin-top: 22px;
+  margin-left: 86px;
   @media (min-width: 770px) {
     margin: 0;
     width: 371px;
@@ -47,7 +48,7 @@
 
 .page-header__menu {
   display: none;
-  margin-top: 17px;
+  margin-top: 0;
   @media (min-width: 770px) {
     .flex();
     width: 100%;
@@ -87,13 +88,14 @@
 
 
 .page-header__button {
-  width: 20px;
+  width: 21px;
+  margin-top: 19px;
   height: 14px;
-  margin-top: 11px;
   background-image: url("@{path}img/menu.svg");
   border: none;
   cursor: pointer;
   background-color: transparent;
+  outline: none;
   @media (min-width: 770px) {
     display: none;
   }
@@ -106,7 +108,7 @@
   height: 20px;
   cursor: pointer;
   margin-left: -21px;
-  margin-top: -1px;
+  margin-top: -2px;
   background-color: transparent;
   transform: rotate(180deg);
   @media (min-width: 770px) {
