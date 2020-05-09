@@ -9,10 +9,14 @@
   display: flex;
   flex-direction: column;
   background-color: white;
-  padding: 36px 30px 46px 30px;
+  padding: 27px 30px 46px 30px;
   @media (min-width: 770px) {
     width: 566px;
-    padding: 51px 107px 46px 108px;
+    padding: 0;
+    padding-top: 51px;
+    padding-left: 108px;
+    padding-right: 108px;
+    padding-bottom: 46px;
   }
 }
 
@@ -61,7 +65,7 @@
   text-transform: uppercase;
   text-align: center;
   width: 163px;
-margin: 0 auto;
+  margin: 0 auto;
   @media (min-width: 770px) {
     font-size: 30px;
     width: 355px;
@@ -76,10 +80,12 @@ margin: 0 auto;
   font-size: 15px;
   font-weight: 400;
   line-height: 30px;
-  margin-bottom: 28px;
+  margin-bottom: 25px;
+  margin-top: 14px;
   @media (min-width: 770px) {
     font-size: 17px;
-    margin-bottom: 26px;
+    .m0p0;
+    padding-top: 23px;
   }
 }
 
@@ -90,7 +96,10 @@ margin: 0 auto;
   .flex();
   flex-wrap: nowrap;
   justify-content: space-between;
-  margin-bottom: 31px;
+
+  @media (min-width: 770px) {
+    margin-top: 21px;
+  }
 }
 
 .catalog-pop-up__item {
@@ -106,9 +115,11 @@ margin: 0 auto;
   line-height: 16px;
   text-transform: uppercase;
   outline: none;
+
   &:first-child {
     border: 2px solid #62d1ba;
   }
+
   @media (min-width: 770px) {
     width: 112px;
     height: 52px;
@@ -121,6 +132,7 @@ margin: 0 auto;
   &:active {
     border: 2px solid #62d1ba;
   }
+
   &:focus {
     border: 2px solid #62d1ba;
   }
@@ -146,4 +158,5 @@ margin: 0 auto;
   background-color: #63d1bb;
   color: #ffffff;
   border: none;
+  margin-top: 31px;
 }

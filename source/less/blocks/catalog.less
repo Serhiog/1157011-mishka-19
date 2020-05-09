@@ -4,8 +4,8 @@
 }
 
 .catalog__name {
+  margin-top: -2px;
   background-color: @grey;
-  margin-top: 26px;
   @media (min-width: 770px) {
     margin-top: -117px;
   }
@@ -21,9 +21,9 @@
   font-size: 27px;
   font-weight: 700;
   line-height: 30px;
-  margin-top: 0;
   padding-left: 10px;
   position: relative;
+  margin: 0;
   @media (min-width: 770px) {
     font-size: 43px;
     text-align: center;
@@ -96,6 +96,7 @@
 }
 
 .catalog__discription {
+
   &:hover {
     box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
   }
@@ -115,6 +116,7 @@
     margin-top: 0;
     height: 334px;
     margin-right: 3px;
+    width: 334px;
   }
   @media (min-width: 1154px) {
     margin-top: -4px;
@@ -123,6 +125,7 @@
     margin-right: 2px;
     padding-bottom: 26px;
     flex-wrap: nowrap;
+    width: auto;
   }
 }
 
@@ -298,6 +301,7 @@
   .m0p0;
   list-style-type: none;
   display: flex;
+  flex-wrap: wrap;
 }
 
 
