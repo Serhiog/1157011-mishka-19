@@ -3,11 +3,10 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport"
-        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>HTML Academy: Мишка</title>
-  <link rel="stylesheet" href="css/style.min.css">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/style.min.css">
   <link rel="preload" href="css/style.min.css" as="style">
   <link rel="preload" href="img/logo-desktop.svg" as="image">
   <link rel="preload" href="fonts/opensans.woff2" as="font">
@@ -45,7 +44,7 @@
           <li class="menu__item menu__item--search">
             <a class="menu__item-link" href="#">
               <svg class="menu__item--search-icon" width="18" height="19">
-                <use xlink:href="img/sprite/sprite.svg#search">
+                <use xlink:href="#search">
                 </use>
               </svg>
               Поиск по сайту
@@ -54,7 +53,7 @@
           <li class="menu__item menu__item--cart">
             <a class="menu__item-link" href="#">
               <svg class="menu__item--cart-icon" width="21" height="18">
-                <use xlink:href="img/sprite/sprite.svg#cart">
+                <use xlink:href="#cart">
                 </use>
               </svg>
               Корзина: пока пуста
@@ -90,7 +89,7 @@
             <a class="main-categories__link" href="#">Предметы<br> интерьера
               <span class="main-categories__link--interior">
                 <svg class="main-categories__link--interior-icon" width="40" height="62">
-                  <use xlink:href="img/sprite/sprite.svg#interior"></use>
+                  <use xlink:href="#interior"></use>
                 </svg>
               </span>
             </a>
@@ -98,9 +97,7 @@
           <li class="main-categories__item">
             <a class="main-categories__link" href="#">Детские<br> игрушки
               <span class="main-categories__link--toys">
-                 <svg class="main-categories__link--toy-icon" width="60" height="60">
-                  <use xlink:href="img/sprite/sprite.svg#toy"></use>
-                </svg>
+                 <svg class="main-categories__link--toy-icon" width="60" height="60"><use xlink:href="#toy"></use></svg>
               </span>
             </a>
           </li>
@@ -175,37 +172,37 @@
           <ul class="about-us__list">
             <li class="about-us__item about-us__item--eco">
               <svg class="about-us__item--eco-pic">
-                <use xlink:href="img/sprite/sprite.svg#flower"></use>
+                <use xlink:href="#flower"></use>
               </svg>
               <a class="about-us__item--link" href="#"> Экологически<br> чистые материалы</a>
             </li>
             <li class="about-us__item about-us__item--rate">
               <svg class="about-us__item--rate-pic">
-                <use xlink:href="img/sprite/sprite.svg#rate"></use>
+                <use xlink:href="#rate"></use>
               </svg>
               <a class="about-us__item--link" href="#">Скандинавский стиль<br> по российской цене</a>
             </li>
             <li class="about-us__item about-us__item--likes">
               <svg class="about-us__item--likes-pic">
-                <use xlink:href="img/sprite/sprite.svg#likes"></use>
+                <use xlink:href="#likes"></use>
               </svg>
               <a class="about-us__item--link" href="#">Увеличивает лайки<br> на фотографиях</a>
             </li>
             <li class="about-us__item about-us__item--handle">
               <svg class="about-us__item--handle-pic">
-                <use xlink:href="img/sprite/sprite.svg#handle"></use>
+                <use xlink:href="#handle"></use>
               </svg>
               <a class="about-us__item--link" href="#">Связано вручную с<br> любовью и умилением</a>
             </li>
             <li class="about-us__item about-us__item--domestic">
               <svg class="about-us__item--domestic-pic">
-                <use xlink:href="img/sprite/sprite.svg#domestic"></use>
+                <use xlink:href="#domestic"></use>
               </svg>
               <a class="about-us__item--link" href="#">Поддержка отечественного<br> производителя</a>
             </li>
             <li class="about-us__item about-us__item--package">
               <svg class="about-us__item--package-pic">
-                <use xlink:href="img/sprite/sprite.svg#package"></use>
+                <use xlink:href="#package"></use>
               </svg>
               <a class="about-us__item--link" href="#">Поставляется в<br> подарочной упаковке</a>
             </li>
@@ -269,8 +266,8 @@
           Напишите нам
         </button>
         <div class="contacts__map">
-                              <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A89a8101256dafa4a3052b5e3b8e23896687772bd460e25e36fbe4d5328747296&amp;source=constructor"
-                                frameborder="0" loading="lazy"></iframe>
+          <iframe
+            src="https://yandex.ru/map-widget/v1/?um=constructor%3A89a8101256dafa4a3052b5e3b8e23896687772bd460e25e36fbe4d5328747296&amp;source=constructor"></iframe>
         </div>
       </div>
 
@@ -283,7 +280,7 @@
       <div class="page-footer__logo">
         <a class="page-footer__link" href="https://htmlacademy.ru/intensive/adaptive">
           <svg class="page-footer__logo-pic" width="102" height="34">
-            <use xlink:href="img/sprite/sprite.svg#logo-pic"></use>
+            <use xlink:href="#logo-pic"></use>
           </svg>
         </a>
       </div>
@@ -292,21 +289,21 @@
           <li class="page-footer__item page-footer__item--instagram">
             <a class="page-footer__link" href="#">
               <svg class="page-footer__icon" width="22" height="21">
-                <use xlink:href="img/sprite/sprite.svg#instagram"></use>
+                <use xlink:href="#instagram"></use>
               </svg>
             </a>
           </li>
           <li class="page-footer__item page-footer__item--facebook">
             <a class="page-footer__link" href="#">
               <svg class="page-footer__icon" width="15" height="28">
-                <use xlink:href="img/sprite/sprite.svg#fb"></use>
+                <use xlink:href="#fb"></use>
               </svg>
             </a>
           </li>
           <li class="page-footer__item page-footer__item--twitter">
             <a class="page-footer__link" href="#">
               <svg class="page-footer__icon" width="23" height="20">
-                <use xlink:href="img/sprite/sprite.svg#twitter"></use>
+                <use xlink:href="#twitter"></use>
               </svg>
             </a>
           </li>
@@ -315,7 +312,7 @@
       <div class="page-footer__made">
         <a class="page-footer__link" href="https://htmlacademy.ru/intensive/adaptive">
           <svg class="page-footer__html-mini-logo" width="27" height="34">
-            <use xlink:href="img/sprite/sprite.svg#html-mini-logo">
+            <use xlink:href="#html-mini-logo">
             </use>
           </svg>
         </a>
@@ -324,20 +321,22 @@
     </div>
   </div>
 </footer>
-<div class="catalog-popup">
-  <div class="catalog-popup__wrapper">
-    <div class="catalog-popup__container">
-      <h2 class="catalog-pop-up__title">Добавить
-        в корзину</h2>
-      <p class="catalog-pop-up__about">Выберите размер:</p>
-      <ul class="catalog-pop-up__list">
-        <li class="catalog-pop-up__item catalog-pop-up__item--default">S</li>
-        <li class="catalog-pop-up__item">M</li>
-        <li class="catalog-pop-up__item">L</li>
-      </ul>
-      <button type="button" class="button catalog-pop-up__add">
-        Добавить
-      </button>
+<div class="catalog-popup__background">
+  <div class="catalog-popup">
+    <div class="catalog-popup__wrapper">
+      <div class="catalog-popup__container">
+        <h2 class="catalog-pop-up__title">Добавить
+          в корзину</h2>
+        <p class="catalog-pop-up__about">Выберите размер:</p>
+        <ul class="catalog-pop-up__list">
+          <li class="catalog-pop-up__item catalog-pop-up__item--default">S</li>
+          <li class="catalog-pop-up__item">M</li>
+          <li class="catalog-pop-up__item">L</li>
+        </ul>
+        <button type="button" class="button catalog-pop-up__add">
+          Добавить
+        </button>
+      </div>
     </div>
   </div>
 </div>

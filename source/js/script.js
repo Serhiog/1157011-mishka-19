@@ -1,25 +1,38 @@
-var link = document.querySelector(".week-item-button,.catalog__add-cart");
-var popup = document.querySelector(".catalog-popup");
+// var link = document.querySelector(".week-item-button");
+var popup = document.querySelector(".catalog-popup__background");
 var close = document.querySelector(".catalog-pop-up__add");
 var btn = document.querySelector(".page-header__button");
 var menu = document.querySelector(".page-header__menu");
 
 
-link.addEventListener("click", function (evt) {
-  evt.preventDefault();
-  popup.classList.add("catalog-popup__show");
-});
+// link.addEventListener("click", function (evt) {
+//   evt.preventDefault();
+//   popup.classList.add("catalog-popup__background--show");
+// });
+
+var buttonItems = document.querySelectorAll('.catalog__add-cart, .week-item-button'),
+  index, button;
+
+for (index = 0; index < buttonItems.length; index++) {
+  button = buttonItems[index];
+  button.addEventListener('click', function (event) {
+    console.log('click');
+    event.preventDefault();
+    popup.classList.add("catalog-popup__background--show");
+  });
+}
 
 close.addEventListener("click", function (evt) {
   evt.preventDefault();
-  popup.classList.remove("catalog-popup__show");
+  popup.classList.remove("catalog-popup__background--show");
 });
+
 
 window.addEventListener("keydown", function (evt) {
   if (evt.keyCode === 27) {
     evt.preventDefault();
-    if (popup.classList.contains("catalog-popup__show")) {
-      popup.classList.remove("catalog-popup__show");
+    if (popup.classList.contains("catalog-popup__background--show")) {
+      popup.classList.remove("catalog-popup__background--show");
     }
   }
 });

@@ -3,12 +3,12 @@
 
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>HTML Academy: Мишка</title>
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/style.min.css">
-  <link rel="preload" href="css/style.css" as="style">
+  <link rel="stylesheet" type="text/css" href="css/style.min.css">
+  <link rel="preload" href="css/style.min.css" as="style">
   <link rel="preload" href="img/logo-desktop.svg" as="image">
   <link rel="preload" href="fonts/opensans.woff2" as="font">
 </head>
@@ -20,7 +20,7 @@
   <div class="container">
     <div class="page-header__wrapper">
       <div class="page-header__logo">
-        <a class="page-header__link" href="https://htmlacademy.ru/intensive/adaptive">
+        <a class="page-header__link" href="index.html">
           <picture>
             <source media="(min-width: 1154px)" srcset="img/logo-desktop.svg">
             <source media="(min-width: 770px)" srcset="img/logo-tablet.svg">
@@ -44,7 +44,7 @@
           <li class="menu__item menu__item--search">
             <a class="menu__item-link" href="#">
               <svg class="menu__item--search-icon" width="18" height="19">
-                <use xlink:href="img/sprite/sprite.svg#search">
+                <use xlink:href="#search">
                 </use>
               </svg>
               Поиск по сайту
@@ -53,7 +53,7 @@
           <li class="menu__item menu__item--cart">
             <a class="menu__item-link" href="#">
               <svg class="menu__item--cart-icon" width="21" height="18">
-                <use xlink:href="img/sprite/sprite.svg#cart">
+                <use xlink:href="#cart">
                 </use>
               </svg>
               Корзина: пока пуста
@@ -98,28 +98,29 @@
         <h2 class="title-form">Тип</h2>
         <div class="form-type-wrapper">
           <div class="form-group">
-            <input class="form-type__select" type="radio" value="interrior" name="type" id="for-int" checked="">
+            <input class="form-type__select" type="radio" value="interrior" name="type" id="for-int" checked>
             <label class="form-type__name form-type__name--1" for="for-int">Аксессуар для интерьера</label>
           </div>
           <div class="form-group">
-            <input class="form-type__select" type="radio" value="toy" name="type" id="toy">
-            <label class="form-type__name form-type__name--2" for="toy">Детская игрушка</label>
+            <input class="form-type__select" type="radio" value="toy" name="type" id="toys">
+            <label class="form-type__name form-type__name--2" for="toys">Детская игрушка</label>
           </div>
         </div>
       </div>
       <!--      ФОРМА ЦВЕТА-->
-  </form></div>
+    </form>
+  </div>
   <div class="container__grey">
     <div class="container--1 container">
       <div class="form-color">
         <h2 class="title-form">Цвет</h2>
         <div class="form-color-wrapper">
           <div class="form-group">
-            <input class="form-color__select" type="checkbox" value="white" name="color" id="white" checked="">
+            <input class="form-color__select" type="checkbox" value="white" name="color" id="white" checked>
             <label class="form-color__name form-color__name--1" for="white">Белый</label>
           </div>
           <div class="form-group">
-            <input class="form-color__select" type="checkbox" value="grey" name="color" id="grey" checked="">
+            <input class="form-color__select" type="checkbox" value="grey" name="color" id="grey" checked>
             <label class="form-color__name form-color__name--2" for="grey">Серый</label>
           </div>
           <div class="form-group">
@@ -180,7 +181,7 @@
           <div class="form-group">
             <input class="form-tel__select" type="tel" id="tel" name="tel" placeholder="+7 ХХХ ХХХ ХХ ХХ*" required="">
             <svg class="form-tel__select-icon" width="25" height="24">
-              <use xlink:href="img/sprite/sprite.svg#phone">
+              <use xlink:href="#phone">
               </use>
             </svg>
             <label class="form-tel__name" for="tel"></label>
@@ -192,7 +193,7 @@
           <div class="form-group">
             <input class="form-email__select" type="email" id="email" name="email" placeholder="Ваш Email*" required="">
             <svg class="form-email__select-icon" width="32" height="21">
-              <use xlink:href="img/sprite/sprite.svg#mail">
+              <use xlink:href="#mail">
               </use>
             </svg>
             <label class="form-email__name" for="email"></label>
@@ -205,7 +206,8 @@
   <div class="container">
     <div class="form-extra">
       <h2 class="title-form">Доп</h2>
-      <textarea class="form-extra__select" id="extra" name="extra" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+      <textarea class="form-extra__select" id="extra" name="extra"
+                placeholder="Опишите все ваши пожелания к заказу"></textarea>
       <label class="form-extra__name" for="extra"></label>
     </div>
   </div>
@@ -219,14 +221,15 @@
       <button class="button form__button" type="button">ОТПРАВИТЬ ЗАКАЗ</button>
     </div>
 
-</div></main>
+  </div>
+</main>
 <footer class="page-footer page-footer--form">
   <div class="container">
     <div class="page-footer__common">
       <div class="page-footer__logo">
         <a class="page-footer__link" href="https://htmlacademy.ru/intensive/adaptive">
           <svg class="page-footer__logo-pic" width="102" height="34">
-            <use xlink:href="img/sprite/sprite.svg#logo-pic"></use>
+            <use xlink:href="#logo-pic"></use>
           </svg>
         </a>
       </div>
@@ -235,21 +238,21 @@
           <li class="page-footer__item page-footer__item--instagram">
             <a class="page-footer__link" href="#">
               <svg class="page-footer__icon" width="22" height="21">
-                <use xlink:href="img/sprite/sprite.svg#instagram"></use>
+                <use xlink:href="#instagram"></use>
               </svg>
             </a>
           </li>
           <li class="page-footer__item page-footer__item--facebook">
             <a class="page-footer__link" href="#">
               <svg class="page-footer__icon" width="15" height="28">
-                <use xlink:href="img/sprite/sprite.svg#fb"></use>
+                <use xlink:href="#fb"></use>
               </svg>
             </a>
           </li>
           <li class="page-footer__item page-footer__item--twitter">
             <a class="page-footer__link" href="#">
               <svg class="page-footer__icon" width="23" height="20">
-                <use xlink:href="img/sprite/sprite.svg#twitter"></use>
+                <use xlink:href="#twitter"></use>
               </svg>
             </a>
           </li>
@@ -258,7 +261,7 @@
       <div class="page-footer__made">
         <a class="page-footer__link" href="https://htmlacademy.ru/intensive/adaptive">
           <svg class="page-footer__html-mini-logo" width="27" height="34">
-            <use xlink:href="img/sprite/sprite.svg#html-mini-logo">
+            <use xlink:href="#html-mini-logo">
             </use>
           </svg>
         </a>
@@ -269,5 +272,4 @@
 </footer>
 <script src="js/script.min.js"></script>
 </body>
-
 </html>
