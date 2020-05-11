@@ -22,11 +22,13 @@ for (index = 0; index < buttonItems.length; index++) {
   });
 }
 
-close.addEventListener("click", function (evt) {
-  evt.preventDefault();
-  popup.classList.remove("catalog-popup__background--show");
-});
 
+if (close){
+  close.addEventListener("click", function (evt) {
+    evt.preventDefault();
+    popup.classList.remove("catalog-popup__background--show");
+  });
+}
 
 window.addEventListener("keydown", function (evt) {
   if (evt.keyCode === 27) {
