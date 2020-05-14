@@ -211,13 +211,6 @@
 }
 
 .advert-video__wrapper-about {
-  &:hover {
-    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
-  }
-
-  &:active {
-    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
-  }
 
   @media (min-width: 770px) {
     display: block;
@@ -240,6 +233,16 @@
   }
   @media (min-width: 1154px) {
     order: -1;
-    margin-top: 0px;
+    margin-top: 0;
+  }
+}
+
+.advert-video__wrapper{
+  &:hover {
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  &:active {
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
   }
 }

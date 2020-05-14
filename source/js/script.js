@@ -3,12 +3,18 @@ var popup = document.querySelector(".catalog-popup__background");
 var close = document.querySelector(".catalog-pop-up__add");
 var btn = document.querySelector(".page-header__button");
 var menu = document.querySelector(".page-header__menu");
+var nojs = document.querySelector(".catalog-popup__nojs");
 
 
 // link.addEventListener("click", function (evt) {
 //   evt.preventDefault();
 //   popup.classList.add("catalog-popup__background--show");
 // });
+
+
+if (nojs) {
+  nojs.classList.remove("catalog-popup__nojs");
+}
 
 var buttonItems = document.querySelectorAll('.catalog__add-cart, .week-item-button'),
   index, button;
