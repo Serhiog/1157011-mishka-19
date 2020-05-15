@@ -1,10 +1,16 @@
+.catalog__link {
+  text-decoration: none;
+  color: black;
+}
+
 .catalog__name {
+  margin-top: -2px;
   background-color: @grey;
   @media (min-width: 770px) {
-    margin-top: -74px;
+    margin-top: -117px;
   }
   @media (min-width: 1154px) {
-    margin-top: -66px;
+    margin-top: -42px;
   }
 }
 
@@ -15,30 +21,50 @@
   font-size: 27px;
   font-weight: 700;
   line-height: 30px;
-  margin-top: 0;
   padding-left: 10px;
   position: relative;
+  margin: 0;
   @media (min-width: 770px) {
     font-size: 43px;
     text-align: center;
-    padding-bottom: 100px;
-    padding-top: 98px;
+    padding-bottom: 88px;
+    padding-top: 106px;
+    margin-left: -10px;
     &::after {
-      content: url("@{path}img/zigzag-fill-desktop-big.png");
+      content: "";
+      background-image: url("@{path}img/zigzag-fill-desktop-big.png");
       position: absolute;
-      top: 210px;
-      left: -47px;
+      top: 214px;
+      left: -40px;
+      width: 770px;
+      height: 24px;
+      background-repeat: repeat-x;
     }
   }
   @media (min-width: 1154px) {
+    font-size: 53px;
+    padding-top: 107px;
+    margin-left: -6px;
+    padding-bottom: 115px;
     &::after {
-      left: 122px;
+      background-image: url("@{path}img/zigzag-fill-desktop-cat-desktop.svg");
+      left: -45px;
+      width: 1150px;
+      height: 34px;
+      top: 238px;
     }
   }
 }
 
 .catalog__list {
   margin-top: 30px;
+  margin-left: -1px;
+
+
+  @media (min-width: 770px) {
+    margin-top: 81px;
+    margin-left: 4px;
+  }
   @media (min-width: 1154px) {
     margin-top: 130px;
   }
@@ -51,14 +77,17 @@
   }
   @media (min-width: 1154px) {
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: flex-start;
   }
 }
 
 .catalog__item {
+
   margin-bottom: 30px;
   @media (min-width: 770px) {
     .flex();
+    margin-bottom: 50px;
+    margin-left: -1px;
   }
   @media (min-width: 1154px) {
     width: 316px;
@@ -67,9 +96,18 @@
 }
 
 .catalog__discription {
+
+  &:hover {
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  &:active {
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+  }
+
   border: 1px solid #ececec;
-  padding-bottom: 27px;
-  margin-top: -3px;
+  padding-bottom: 26px;
+  margin-top: -4px;
   @media (min-width: 770px) {
     flex-grow: 1;
     .flex();
@@ -77,10 +115,17 @@
     justify-content: flex-start;
     margin-top: 0;
     height: 334px;
+    margin-right: 3px;
+    width: 334px;
   }
   @media (min-width: 1154px) {
     margin-top: -4px;
-    height: auto;
+    height: 197px;
+    margin-left: -2px;
+    margin-right: 2px;
+    padding-bottom: 26px;
+    flex-wrap: nowrap;
+    width: auto;
   }
 }
 
@@ -90,9 +135,15 @@
   font-weight: 700;
   line-height: 24px;
   padding-left: 28px;
-  margin-top: 25px;
+  margin-top: 27px;
   @media (min-width: 770px) {
     font-size: 20px;
+    margin-left: -3px;
+    padding-left: 29px;
+    margin-top: 25px;
+  }
+  @media (min-width: 1154px) {
+    margin-left: -2px;
   }
 }
 
@@ -106,18 +157,27 @@
   @media (min-width: 1154px) {
     width: 316px;
     height: 462px;
+    margin-left: -2px;
   }
 }
 
 .catalog__detail {
+  color: #444444;
   font-family: @font400;
   font-size: 13px;
   font-weight: 400;
   line-height: 30px;
   padding-left: 28px;
-  margin-top: -11px;
+  margin-top: -12px;
   @media (min-width: 770px) {
     font-size: 15px;
+    padding-left: 26px;
+    margin-top: -14px;
+    margin-bottom: 40px;
+  }
+  @media (min-width: 1154px) {
+    padding-left: 26px;
+    margin-bottom: 0;
   }
 }
 
@@ -126,15 +186,17 @@
   justify-content: space-between;
   margin-top: 41px;
   position: relative;
+
   &::before {
     content: "";
     width: 202px;
     height: 1px;
     background-color: #ECECEC;
     position: absolute;
-    top: -12px;
-    left: 24px;
+    top: -24px;
+    left: 29px;
   }
+
   @media (min-width: 770px) {
     margin-top: auto;
     &::before {
@@ -143,9 +205,20 @@
       height: 1px;
       background-color: #ECECEC;
       position: absolute;
-      top: -12px;
+      top: -22px;
       left: 31px;
 
+    }
+  }
+  @media (min-width: 1154px) {
+    &::before {
+      content: "";
+      width: 256px;
+      height: 1px;
+      background-color: #ECECEC;
+      position: absolute;
+      top: -2px;
+      left: 27px;
     }
   }
 }
@@ -157,7 +230,25 @@
   background-color: #ececec;
   position: absolute;
   left: 26px;
-  top: -13px;
+  top: -23px;
+
+  @media (min-width: 770px) {
+    content: "";
+    width: 268px;
+    height: 1px;
+    background-color: #ececec;
+    position: absolute;
+    left: 32px;
+    top: -23px;
+  }
+  @media (min-width: 1154px) {
+    width: 268px;
+    height: 1px;
+    background-color: #ececec;
+    position: absolute;
+    left: 27px;
+    top: -2px;
+  }
 }
 
 .catalog__amount {
@@ -168,15 +259,95 @@
   padding-left: 28px;
   @media (min-width: 770px) {
     font-size: 17px;
+    padding-left: 30px;
+  }
+  @media (min-width: 1154px) {
+    margin-left: -4px;
+    margin-top: 21px;
   }
 }
 
 .catalog__add-cart {
   font-size: 0;
+  color: #D9D8D8;
+  padding-right: 25px;
+  border: none;
+  background-color: transparent;
+  outline: none;
+  padding-bottom: 5px;
+  cursor: pointer;
 
-  &::after {
-    content: url("@{path}img/icon-cart.svg");
-    opacity: 0.2;
-    padding-right: 27px;
+  @media (min-width: 770px) {
+    padding-right: 31px;
+
+    &:hover {
+      color: #63d1bb;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
   }
+}
+
+.catalog__add-cart--icon {
+  @media (min-width: 1154px) {
+    margin-top: 20px;
+    margin-left: 5px;
+  }
+}
+
+.catalog__container {
+  .m0p0;
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+.catalog__wrapper-item {
+  @media (min-width: 1154px) {
+    margin-right: 52px;
+    &:nth-child(3n) {
+      margin-right: 0;
+    }
+  }
+}
+
+.catalog__detail:first-child {
+  @media (min-width: 770px) {
+    padding-left: 26px;
+    margin-top: -15px;
+  }
+}
+
+.catalog__add-cart svg {
+  &:hover {
+    color: #86dbca;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.catalog__detail--2 {
+
+  @media (min-width: 770px) {
+    margin-top: -11px;
+  }
+  @media (min-width: 1154px) {
+    margin-top: -14px;
+  }
+}
+
+.catalog__detail--3 {
+  margin-top: -11px;
+  @media (min-width: 770px) {
+    margin-top: -14px;
+  }
+}
+
+.catalog__header {
+  .visually-hidden;
 }

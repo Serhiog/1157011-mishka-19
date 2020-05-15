@@ -1,5 +1,5 @@
 .page-header {
-  box-shadow: 0 1px 0 #ececec, inset 0 1px 0 #ececec;
+
   @media (min-width: 770px) {
     box-shadow: none;
   }
@@ -12,7 +12,6 @@
 .page-header__wrapper {
   margin-left: auto;
   .flex();
-  min-height: 79px;
   align-items: center;
   @media (min-width: 770px) {
     justify-content: space-between;
@@ -21,18 +20,22 @@
 
 .page-header__logo {
   margin: 0 auto;
-  padding-top: 22px;
+  padding-top: 0;
+  margin-bottom: 19px;
+  margin-top: 22px;
+  margin-left: 86px;
   @media (min-width: 770px) {
     margin: 0;
     width: 371px;
-    padding-top: 22px;
-    padding-bottom: 22px;
+    padding-top: 23px;
+    z-index: 7;
+    margin-left: -1px;
   }
   @media (min-width: 1154px) {
     margin: 0 auto;
     width: auto;
-    z-index: 1;
-    margin-top: -10px;
+    z-index: 10;
+    margin-top: -14px;
   }
 }
 
@@ -44,37 +47,55 @@
 }
 
 .page-header__menu {
-  margin-top: 17px;
   display: none;
+  margin-top: 0;
   @media (min-width: 770px) {
-    display: block;
+    .flex();
     width: 100%;
-    margin-top: 10px;
     position: relative;
-    &::before {
-      content: "Бесплатная доставка по России";
-      position: absolute;
-      font-family: @font400;
-      font-size: 15px;
-      font-weight: 400;
-      line-height: 24px;
-      color: #444444;
-      right: -1px;
-      z-index: 1;
-      @media (min-width: 1154px) {
-        top: 61px;
-      }
-    }
+    flex-wrap: nowrap;
+    min-height: 200px;
+    align-items: center;
+    margin-top: -68px;
   }
   @media (min-width: 1154px) {
     .flex();
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
     margin-top: -84px;
+    justify-content: space-between;
+    min-height: auto;
+    align-items: stretch;
+  }
+}
+
+.menu__item--search .menu__item-link {
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }
 
 .page-header__container-button {
   margin-top: -18px;
+  @media (min-width: 770px) {
+    display: none;
+  }
+}
+
+
+.page-header__button {
+  width: 21px;
+  margin-top: 19px;
+  height: 14px;
+  background-image: url("@{path}img/menu.svg");
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+  outline: none;
   @media (min-width: 770px) {
     display: none;
   }
@@ -87,16 +108,13 @@
   height: 20px;
   cursor: pointer;
   margin-left: -21px;
-  margin-top: -1px;
-}
-
-.page-header__button {
-  width: 20px;
-  height: 14px;
-  margin-top: 11px;
-  background-image: url("@{path}img/menu.png");
-  border: none;
-  cursor: pointer;
+  margin-top: -2px;
+  background-color: transparent;
+  transform: rotate(180deg);
+  transition: all 0.3s;
+  @media (min-width: 770px) {
+    display: none;
+  }
 }
 
 .page-header__image {
@@ -111,5 +129,47 @@
     width: 149px;
     height: 72px;
   }
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
+.menu__list--extra {
+  display: none;
+  @media (min-width: 770px) {
+    display: inline-block;
+  }
+  list-style-type: none;
+}
+
+.menu__item--extra-info {
+  font-family: @font400;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #444444;
+  right: 1px;
+  z-index: 1;
+  margin-left: auto;
+}
+
+.menu__item-link {
+  &:hover {
+    opacity: 0.6;
+
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+;
+}
+
+.page-header__menu--open {
+  display: block;
+}

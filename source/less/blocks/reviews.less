@@ -1,9 +1,13 @@
 .reviews {
-  margin-top: 50px;
+  margin-top: 54px;
   @media (min-width: 770px) {
-    margin-top: 130px;
+    margin-top: -29px;
     padding-bottom: 52px;
     position: relative;
+    margin-left: 2px;
+  }
+  @media (min-width: 1154px) {
+    margin-top: -21px;
   }
 }
 
@@ -13,20 +17,44 @@
     background-repeat: no-repeat;
     padding-bottom: 52px;
     padding-top: 86px;
-    @media (min-resolution: @retina-dppx), (min-resolution: @retina-dpi) {
-      background-image: url("@{path}img/review@2x.jpg");
-      background-size: 700px auto;
-    }
+  }
+  @media (min-width: 1154px) {
+    background-position-x: 52px;
+    height: 457px;
+  }
+
+  @media (min-resolution: @retina-dppx), (min-resolution: @retina-dpi) {
+    background-image: url("@{path}img/review@2x.jpg");
+    background-size: 350px;
+  }
+}
+
+.reviews__blockquote {
+  position: relative;
+  @media (min-width: 770px) {
     &::after {
-      content: url("@{path}img/big-zigzag-line-desktop.png");
+      content: "";
+      background-image: url("@{path}img/big-zigzag-line-desktop.png");
       bottom: -93px;
       position: absolute;
-      left: 66px;
+      left: -53px;
+      width: 772px;
+      height: 17px;
+      top: 441px;
+      background-repeat: no-repeat;
     }
   }
   @media (min-width: 1154px) {
-    background-position-x: 27px;
     .flex();
+    background-size: 380px;
+    padding-left: 26px;
+    &::after {
+      background-image: url("@{path}img/zigzag-line-desktop-big.svg");
+      width: 1052px;
+      height: 23px;
+      background-repeat: repeat-x;
+      left: -1px;
+    }
   }
 }
 
@@ -41,13 +69,14 @@
 }
 
 .reviews__wrapper {
-  margin-top: 61px;
+  margin-top: 47px;
   @media (min-width: 770px) {
-    margin-top: 0;
+    margin-top: 4px;
     margin-bottom: 50px;
   }
   @media (min-width: 1154px) {
-    margin-left: 148px;
+    margin-left: 175px;
+    margin-top: 6px;
   }
 }
 
@@ -58,12 +87,20 @@
   font-weight: 700;
   line-height: 30px;
   .m0p0;
+  margin-left: -2px;
+
+
   @media (min-width: 770px) {
+    margin-left: -5px;
+    margin-top: 1px;
     font-size: 43px;
+
   }
   @media (min-width: 1154px) {
     font-size: 53px;
-    margin-left: 148px;
+    margin-left: 171px;
+    margin-top: -2px;
+    max-width: 650px;
   }
 }
 
@@ -77,9 +114,10 @@
   font-size: 15px;
   font-weight: 400;
   line-height: 30px;
-  .m0p0;
-  width: 257px;
-  margin-top: 24px;
+  padding: 0;
+  width: 270px;
+  margin: 47px 0 0;
+
 
   & br {
     display: none;
@@ -88,10 +126,14 @@
   @media (min-width: 770px) {
     font-size: 17px;
     margin-top: 0;
-    width: 645px;
+    width: 672px;
+
+    padding-top: 2px;
   }
   @media (min-width: 1154px) {
-    width: 770px;
+    width: 800px;
+    margin-left: -2px;
+    margin-top: -1px;
     & br {
       display: inline;
     }
@@ -106,13 +148,17 @@
   font-size: 17px;
   font-weight: 700;
   line-height: 24px;
-  font-style: normal;
-  margin-bottom: 30px;
+
+  margin-bottom: 31px;
+
   @media (min-width: 770px) {
     margin-top: 0;
+    margin-left: -1px;
+
   }
   @media (min-width: 1154px) {
-    margin-left: 148px;
+    margin-left: 174px;
+
   }
 }
 
@@ -123,16 +169,20 @@
   font-size: 17px;
   font-weight: 400;
   line-height: 24px;
-  font-style: normal;
+
 }
 
 .reviews__nav {
   .flex;
-  margin-top: 33px;
+  margin-top: -2px;
   @media (min-width: 770px) {
-    margin-top: 0;
+    margin-top: 8px;
     justify-content: space-between;
     width: 100%;
+  }
+  @media (min-width: 1154px) {
+    margin-top: -11px;
+
   }
 }
 
@@ -140,16 +190,37 @@
   width: 130px;
   border: 1px solid #ececec;
   position: relative;
+  cursor: pointer;
+
+  &:hover {
+    background-color: transparent;
+  }
+
+  &:hover::before {
+    opacity: 0.6;
+  }
+
+  &:active::before {
+    opacity: 0.3;
+  }
+;
   @media (min-width: 770px) {
     border: none;
     width: 110px;
   }
 
   &::before {
-    content: url("@{path}img/icon-left-arrow.svg");
+    content: "";
+    background-image: url("@{path}img/icon-left-arrow.svg");
     position: absolute;
-    left: 36px;
+    left: 37px;
     top: 12px;
+    width: 50px;
+    height: 26px;
+    @media (min-width: 770px) {
+      left: 34px;
+      top: 11px;
+    }
   }
 }
 
@@ -157,53 +228,90 @@
   width: 130px;
   border: 1px solid #ececec;
   position: relative;
+  cursor: pointer;
+
+  &:hover {
+    background-color: transparent;
+  }
+
+  &:hover::before {
+    opacity: 0.6;
+  }
+
+  &:active::before {
+    opacity: 0.3;
+  }
+
   @media (min-width: 770px) {
     border: none;
     width: 110px;
   }
 
   &::before {
-    content: url("@{path}img/icon-right-arrow.svg");
+    content: "";
+    background-image: url("@{path}img/icon-right-arrow.svg");
     position: absolute;
     right: 41px;
     top: 12px;
+    width: 50px;
+    height: 26px;
+    @media (min-width: 770px) {
+      right: 48px;
+      top: 11px;
+    }
   }
 }
 
 .reviews__btns {
   .flex();
   @media (min-width: 770px) {
-    margin-right: -41px;
+    margin-right: -28px;
+    margin-top: 3px;
+  }
+  @media (min-width: 1154px) {
+    margin-right: -27px;
   }
 }
 
 .reviews__send {
   margin-top: 38px;
   position: relative;
-  padding-left: 0px;
+  padding-left: 9px;
+  letter-spacing: 1px;
   @media (min-width: 770px) {
     margin-top: 0;
     width: 175px;
-  }
+    padding-right: 10px;
+    padding-bottom: 1px;
 
-  &::after {
-    content: url("@{path}img/zigzag-line-desktop.png");
-    position: absolute;
-    left: -32px;
-    top: 85px;
-    @media (min-width: 770px) {
-      content: none;
-    }
+  }
+  @media (min-width: 1154px) {
+    padding-top: 6px;
+    padding-left: 13px;
   }
 }
 
 .reviews__btn {
   @media (min-width: 770px) {
     order: -1;
-    margin-left: auto;
     margin-bottom: 40px;
     .flex();
     justify-content: flex-end;
     width: 100%;
+    margin-left: -2px;
+    margin-top: -7px;
+  }
+
+  &::after {
+    content: "";
+    background-image: url("@{path}img/zigzag-line-tablet.svg");
+    width: 320px;
+    height: 6px;
+    position: absolute;
+    right: -31px;
+    bottom: -51px;
+    @media (min-width: 770px) {
+      content: none;
+    }
   }
 }
