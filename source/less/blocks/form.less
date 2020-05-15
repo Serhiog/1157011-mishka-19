@@ -182,9 +182,11 @@
 }
 
 .form-email .title-form::after {
-  left: 82px;
-  top: 8px;
-  width: 179px;
+  @media (max-width: 760px) {
+    left: 82px;
+    top: 6px;
+    width: 179px;
+  }
 }
 
 .form-type__name {
