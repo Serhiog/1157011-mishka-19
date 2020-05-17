@@ -1,4 +1,4 @@
-// var link = document.querySelector(".week-item-button");
+
 var popup = document.querySelector(".catalog-popup__background");
 var close = document.querySelector(".catalog-pop-up__add");
 var btn = document.querySelector(".page-header__button");

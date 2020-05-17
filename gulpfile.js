@@ -16,7 +16,8 @@ var posthtml = require("gulp-posthtml");
 var include = require("posthtml-include");
 var del = require("del");
 var minhtml = require("gulp-htmlmin");
-var minjs = require("gulp-uglify")
+var minjs = require("gulp-uglify");
+var minpicjs = require("gulp-uglify")
 
 gulp.task("css", function () {
   return gulp.src("source/less/style.less")
@@ -109,5 +110,12 @@ gulp.task("minjs", function () {
     .pipe(gulp.dest("build/js"));
 });
 
-gulp.task("build", gulp.series("clean", "copy", "css", "images", "webp", "posthtml", "minhtml", "minjs"));
+gulp.task("minpicjs", function () {
+  return gulp.src("source/js/picturefill.js")
+    .pipe(minpicjs())
+    .pipe(rename("picturefill.min.js"))
+    .pipe(gulp.dest("build/js"));
+});
+
+gulp.task("build", gulp.series("clean", "copy", "css", "images", "webp", "posthtml", "minhtml", "minjs", "minpicjs"));
 gulp.task("start", gulp.series("build", "server"));
