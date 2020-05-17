@@ -43,3 +43,29 @@ btn.addEventListener("click", function (evt) {
   menu.classList.toggle("page-header__menu--open");
   btn.classList.toggle("page-header__button--close");
 });
+
+
+var tel = document.getElementById("tel");
+var mail = document.getElementById("email");
+var formBtn = document.querySelector(".button form__button");
+
+formBtn.addEventListener("click", function (evt) {
+  evt.preventDefault();
+
+  if (!tel.value) {
+    tel.style.border = "2px solid red";
+    alert("Укажите номер телефона");
+    return false;
+  } else {
+    tel.style.border = "2px solid green";
+  }
+
+  if (!mail.value) {
+    mail.style.border = "2px solid red";
+    alert("Укажите почту");
+    return false;
+  } else {
+    mail.style.border = "2px solid green";
+  }
+  return true;
+});
