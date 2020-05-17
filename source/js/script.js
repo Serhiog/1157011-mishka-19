@@ -1,6 +1,6 @@
 
 var popup = document.querySelector(".catalog-popup__background");
-var close = document.querySelector(".catalog-pop-up__add");
+var close = document.querySelector(".catalog-popup__add");
 var btn = document.querySelector(".page-header__button");
 var menu = document.querySelector(".page-header__menu");
 var nojs = document.querySelector(".catalog-popup__nojs");
