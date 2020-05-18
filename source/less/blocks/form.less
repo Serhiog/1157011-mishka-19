@@ -118,6 +118,7 @@
     padding-left: 21px;
     padding-bottom: -11px;
     margin-bottom: 7px;
+    width: 250px;
   }
 }
 
@@ -638,6 +639,10 @@
   &:hover svg {
     color: #62d1ba;
   }
+
+  @media (min-width: 768px) {
+    margin-bottom: 15px;
+  }
 }
 
 .form-email .form-email__select,
@@ -654,6 +659,8 @@
 }
 
 .form-email__select {
+  padding-bottom: 15px;
+
   @media (min-width: 768px) {
     margin-top: -13px;
     padding-bottom: 15px;
@@ -717,14 +724,6 @@
   }
 }
 
-.form-tel .form-group {
-  @media (min-width: 768px) {}
-}
-
-.form-email .form-group {
-  @media (min-width: 768px) {}
-}
-
 .form-tel {
   margin-top: 30px;
   margin-bottom: 41px;
@@ -733,10 +732,6 @@
     margin-left: 13px;
     margin-bottom: 21px;
     white-space: nowrap;
-  }
-
-  & .title-form {
-    padding-bottom: 7px;
   }
 }
 
@@ -799,10 +794,6 @@
     margin-top: 55px;
   }
 
-  & .title-form {
-    padding-bottom: 11px;
-  }
-
   & ::after {
     left: 62px;
   }
@@ -817,6 +808,7 @@
   }
 
   @media (min-width: 1150px) {
+    padding-bottom: 11px;
     margin-right: 70px;
   }
 }
@@ -829,15 +821,12 @@
   }
 }
 
-.form-fullname__wrapper .form-group {
-  @media (min-width: 768px) {}
-}
-
 .form-tel .title-form {
   margin-bottom: 14px;
   margin-right: 133px;
 
   @media (min-width: 768px) {
+    padding-bottom: 7px;
     margin-top: -6px;
     margin-left: -13px;
   }
@@ -850,7 +839,7 @@
     content: "";
     width: 198px;
     height: 1px;
-    background-color: #62D1BA;
+    background-color: #62d1ba;
     position: absolute;
     top: 8px;
     margin-left: 31px;
@@ -901,8 +890,6 @@
   &:hover {
     border: 2px solid #62d1ba;
   }
-
-  @media (min-width: 768px) {}
 
   @media (min-width: 1150px) {
     width: 700px;
@@ -971,12 +958,6 @@
   }
 }
 
-.form-color-wrapper .form-group {
-  @media (min-width: 768px) {
-    width: 250px;
-  }
-}
-
 .form-type-wrapper {
   @media (min-width: 768px) {
     .flex();
@@ -998,7 +979,7 @@
   }
 }
 
-.form-color__select:checked~.form-color__name {
+.form-color__select:checked ~ .form-color__name {
   &--2::after {
     top: 20px;
     left: -53px;
@@ -1084,12 +1065,6 @@
   }
 }
 
-.form-email .form-group {
-  @media (min-width: 768px) {
-    margin-bottom: 15px;
-  }
-}
-
 .form-color .title-form {
   @media (min-width: 1150px) {
     margin-left: -6px;
@@ -1102,8 +1077,4 @@
   @media (min-width: 768px) {
     padding-bottom: 10px;
   }
-}
-
-.form-email__select {
-  padding-bottom: 15px;
 }
