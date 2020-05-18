@@ -1,15 +1,17 @@
 .week-item {
   margin-top: -7px;
-  @media (min-width:  768px) {
+
+  @media (min-width: 768px) {
     margin-top: 12px;
   }
-  @media (min-width:  1150px) {
+
+  @media (min-width: 1150px) {
     margin-top: 131px;
   }
 }
 
 .week-item__title {
-  color: #000;
+  color: #000000;
   font-family: @font700;
   font-size: 25px;
   font-weight: 700;
@@ -19,16 +21,16 @@
   position: relative;
   padding-top: 34px;
 
-  @media (min-width:  768px) {
+  @media (min-width: 768px) {
     font-family: @font700;
     font-size: 43px;
     font-weight: 700;
     line-height: 50px;
     margin-left: -1px;
     margin-top: -1px;
-
   }
-  @media (min-width:  1150px) {
+
+  @media (min-width: 1150px) {
     font-size: 53px;
     margin-left: 171px;
     margin-top: -4px;
@@ -38,9 +40,9 @@
 }
 
 .week-item__wrapper {
-  @media (min-width:  768px) {
+  @media (min-width: 768px) {
     .flex();
-    flex-direction: column;;
+    flex-direction: column;
   }
 }
 
@@ -60,12 +62,13 @@
     background-repeat: no-repeat;
   }
 
-  @media (min-width:  768px) {
+  @media (min-width: 768px) {
     .flex();
     flex-direction: row;
     flex-wrap: wrap;
     height: auto;
     margin-top: 30px;
+
     &::after {
       background-image: url("@{path}img/zigzag-line-desktop.svg");
       bottom: -65px;
@@ -74,12 +77,14 @@
       height: 17px;
     }
   }
-  @media (min-width:  1150px) {
+
+  @media (min-width: 1150px) {
     margin-top: 33px;
     margin-left: 175px;
     height: auto;
     flex-wrap: wrap;
     flex-direction: row;
+
     &::after {
       background-image: url("@{path}img/zigzag-line-desktop-big.svg");
       bottom: -93px;
@@ -92,7 +97,7 @@
 
 .week-item__title {
   &--best-item {
-    &:after {
+    &::after {
       content: "ТОВАР НЕДЕЛИ";
       color: #63d1bb;
       font-family: @font700;
@@ -104,7 +109,7 @@
       display: block;
       top: 70px;
 
-      @media (min-width:  768px) {
+      @media (min-width: 768px) {
         right: 28px;
         top: 47px;
         width: 70px;
@@ -112,7 +117,8 @@
         line-height: 17px;
         margin-left: -2px;
       }
-      @media (min-width:  1150px) {
+
+      @media (min-width: 1150px) {
         text-align: center;
         left: -124px;
         top: 11px;
@@ -131,17 +137,17 @@
   padding: 0;
   margin: 0;
   margin-top: 48px;
-  @media (min-width:  768px) {
+
+  @media (min-width: 768px) {
     width: 300px;
     font-size: 17px;
     margin-top: 19px;
     line-height: 30px;
-
   }
 }
 
 .week-item__main-info {
-  @media (min-width:  768px) {
+  @media (min-width: 768px) {
     order: 0;
   }
 
@@ -157,12 +163,14 @@
   border-collapse: collapse;
   margin-left: -1px;
   margin-top: 19px;
-  @media (min-width:  768px) {
+
+  @media (min-width: 768px) {
     margin-top: 36px;
     margin-left: 0;
     width: 292px;
   }
-  @media (min-width:  1150px) {
+
+  @media (min-width: 1150px) {
     margin-top: 48px;
     margin-left: -1px;
     width: 293px;
@@ -174,8 +182,7 @@
 }
 
 .week-item__properties {
-  border-bottom: 1px solid #ECECEC;
-
+  border-bottom: 1px solid #ececec;
 }
 
 .week-item__property {
@@ -184,7 +191,8 @@
   text-align: start;
   padding-bottom: 10px;
   padding-top: 10px;
-  @media (min-width:  768px) {
+
+  @media (min-width: 768px) {
     padding-bottom: 11px;
   }
 }
@@ -194,13 +202,14 @@
   padding-bottom: 7px;
   padding-top: 7px;
 
-  @media (min-width:  768px) {
+  @media (min-width: 768px) {
     padding-bottom: 11px;
     padding-top: 10px;
     margin-left: -52px;
     display: block;
   }
-  @media (min-width:  1150px) {
+
+  @media (min-width: 1150px) {
     padding-left: 36px;
   }
 }
@@ -215,7 +224,8 @@
 .week-item__value--mod {
   padding-top: 4px;
   letter-spacing: -0.8px;
-  @media (min-width:  768px) {
+
+  @media (min-width: 768px) {
     padding-top: 10px;
     letter-spacing: -1.2px;
   }
@@ -223,12 +233,14 @@
 
 .week-item__picture {
   margin-top: 29px;
-  @media (min-width:  768px) {
+
+  @media (min-width: 768px) {
     order: 0;
     margin-top: 27px;
     margin-left: 35px;
   }
-  @media (min-width:  1150px) {
+
+  @media (min-width: 1150px) {
     margin-left: 34px;
   }
 }
@@ -240,14 +252,14 @@
   margin-top: 23px;
   margin-left: -2px;
 
-  @media (min-width:  768px) {
+  @media (min-width: 768px) {
     font-size: 20px;
     line-height: 24px;
     margin-top: 20px;
     margin-left: -1px;
   }
 
-  @media (min-width:  1150px) {
+  @media (min-width: 1150px) {
     font-size: 20px;
     padding-left: 10px;
   }
@@ -259,7 +271,7 @@
   padding-left: 5px;
   letter-spacing: 1px;
 
-  @media (min-width:  768px) {
+  @media (min-width: 768px) {
     width: 292px;
     padding-left: 9px;
     margin-left: -1px;
@@ -268,11 +280,12 @@
 }
 
 .week-item__price {
-  @media (min-width:  768px) {
+  @media (min-width: 768px) {
     margin-left: 1px;
     margin-top: 1px;
   }
-  @media (min-width:  1150px) {
+
+  @media (min-width: 1150px) {
     margin-left: -6px;
     margin-top: 0;
   }
@@ -280,20 +293,23 @@
 
 .week-item__add {
   margin-top: 17px;
-  @media (min-width:  768px) {
+
+  @media (min-width: 768px) {
     margin-top: 3px;
   }
 }
 
 .week-item__deatails {
   order: 2;
-  @media (min-width:  768px) {
+
+  @media (min-width: 768px) {
     margin-top: -135px;
     .flex();
     flex-direction: column;
     align-items: center;
   }
-  @media (min-width:  1150px) {
+
+  @media (min-width: 1150px) {
     margin-top: -134px;
   }
 }
@@ -301,11 +317,13 @@
 .week-item__image {
   width: 260px;
   height: 315px;
-  @media (min-width:  768px) {
+
+  @media (min-width: 768px) {
     width: 333px;
     height: 404px;
   }
-  @media (min-width:  1150px) {
+
+  @media (min-width: 1150px) {
     width: 525px;
     height: 636px;
     margin-top: -166px;
