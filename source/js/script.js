@@ -22,7 +22,7 @@ for (index = 0; index < buttonItems.length; index++) {
 }
 
 
-if (close){
+if (close) {
   close.addEventListener("click", function (evt) {
     evt.preventDefault();
     popup.classList.remove("catalog-popup__background--show");
