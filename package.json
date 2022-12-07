@@ -23,7 +23,7 @@
     "gulp-svgstore": "^7.0.1",
     "gulp-uglify": "^3.0.2",
     "gulp-webp": "^4.0.1",
-    "lint": "^0.7.0",
+    "lint": "^0.8.8",
     "posthtml-include": "^1.4.3",
     "stylelint": "^13.3.3",
     "stylelint-config-htmlacademy": "^0.1.4"
